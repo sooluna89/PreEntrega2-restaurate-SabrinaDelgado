@@ -1,0 +1,897 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Merriweather Sans', sans-serif;
+
+}
+
+.navbar-brand img {
+    width: 170px;
+    height: auto;
+    cursor: pointer;
+    border-radius: 20px;
+    margin: 0 0 0 90px;
+}
+
+.color-encabezado {
+    background-color: #f30b0b;
+}
+
+.enlaces-b a {
+    font-size: 25px;
+    transition: background 300ms;
+    font-weight: 200px;
+}
+
+.enlaces-b a:hover {
+    color: #edf0f1;
+}
+
+.navbar-nav a {
+    font-weight: 580;
+    color: #353535;
+}
+
+
+/*portada index*/
+.portada-b {
+    display: flex;
+    max-width: 100%;
+    height: 1024px;
+    box-sizing: border-box;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: all .1s ease-in-out;
+    margin: 0px;
+    animation: portada 17s infinite linear;
+    background-blend-mode: soft-light;
+    background-color: rgba(94, 89, 91, 0.705);
+    box-shadow: 0px 0px 30px 0px rgb(83, 82, 82);
+    background-attachment: fixed;
+}
+
+.contenedor-portada {
+    width: 100%;
+    height: auto;
+    margin: 0px;
+    padding: 0px;
+    align-content: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+
+
+@keyframes portada {
+
+    0% {
+
+        background-image: url(../assets/images/pastas-salsas-portada.jpg);
+    }
+
+
+
+
+    25% {
+
+        background-image: url(../assets/images/pastas-salsas-portada.jpg);
+    }
+
+
+    26% {
+
+        background-image: url(../assets/images/lomo-batatas-portada.jpg);
+    }
+
+    50% {
+
+        background-image: url(../assets/images/lomo-batatas-portada.jpg);
+
+
+    }
+
+    51% {
+
+        background-image: url(../assets/images/lomo-batatas-portada.jpg);
+
+
+    }
+
+    75% {
+
+        background-image: url(../assets/images/estofado-portada.jpg);
+
+    }
+
+
+    100% {
+
+        background-image: url(../assets/images/estofado-portada.jpg);
+
+
+    }
+
+
+}
+
+
+
+/*titulos  portada index*/
+.contenedor-portada h6 {
+    height: auto;
+    max-width: 100%;
+    font-size: 60px;
+    margin-bottom: 0px;
+    padding: 0px;
+    text-align: center;
+    color: #fff;
+    align-items: center;
+    word-spacing: 17px;
+    flex-direction: column;
+
+}
+
+
+/*sub titulo*/
+.contenedor-portada h5 {
+    display: flex;
+    max-width: 100%;
+    height: auto;
+    font-size: 30px;
+    margin-top: 30px;
+    padding: 60px;
+    color: #fff;
+    word-spacing: 5px;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+
+
+
+/*botones de todas las reservas solo estilo*/
+.reserva-b a {
+    width: auto;
+    height: 100%;
+    background: none;
+    font-size: 40px;
+    padding: 15px;
+    border: 1px solid #fafafa;
+    color: #fafafa;
+    margin: 0px;
+    transition: background 300ms;
+    cursor: pointer;
+    border-radius: 10px;
+    align-items: flex-end;
+    text-decoration: none;
+}
+
+/*CENTRAR BOTONES RESERVA DE LOS BANNERS*/
+.boton .reserva-b {
+    display: flex;
+    justify-content: center;
+}
+
+.reserva-b a:hover {
+    background: white;
+    color: black;
+}
+
+
+@media (max-width:1024px) and (min-width:320px) {
+    .portada {
+        display: flex;
+        height: auto;
+        max-width: 1024px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+
+
+    }
+
+    .contenedor-portada h6 {
+        font-size: 55px;
+    }
+
+}
+
+
+
+/*contenido index*/
+/*Ricas comidas ,ingredientes frescos*/
+.textIndexone {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #f30b0b;
+    color: #edf0f1;
+}
+
+.titleOne {
+    font: size 3rem;
+    margin: 90px 0 10px 0;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.p-one {
+    font-size: 25px;
+    margin: 50px;
+}
+
+.img-one {
+    display: inline;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 84, 3rem;
+    object-fit: cover;
+}
+
+
+/*reseña clientes*/
+
+.testimonios {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.titulo_reseña {
+    margin: 50px 0px;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    color: rgb(119, 115, 115);
+}
+
+.testimonios_header h1 {
+    font-size: 2, 9rem;
+    font-weight: 500;
+    background-color: #9b9494;
+    color: #fafafa;
+    padding: 10px 20px;
+}
+
+.testimonio_header span {
+    font-size: 2.2rem;
+    color: #252525;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+}
+
+.testimonios_contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+
+}
+
+.testimonios_caja {
+    width: 500px;
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.10);
+    background-color: #fafafa;
+    padding: 20px;
+    margin: 15px 30px 30px 30px;
+
+}
+
+.perfil-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 30px;
+}
+
+.perfil-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.perfil {
+    display: flex;
+    align-items: center;
+}
+
+.name-user {
+    display: flex;
+    flex-direction: column;
+}
+
+.name-user strong {
+    color: #5f5050;
+    font-size: 1, 3rem;
+}
+
+.name-user span {
+    color: #979797;
+}
+
+.caja-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+/*estrellas reseña*/
+
+:root {
+
+    --color-hover: #ffa400;
+}
+
+.valoracion {
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+.valoracion button {
+    background-color: initial;
+    border: 0;
+    color: rgb(246, 223, 15);
+    transition: 1s all;
+}
+
+.valoracion button:hover {
+    cursor: pointer;
+    transform: rotate(360deg);
+}
+
+button:nth-child(1):hover~button {
+    transform: rotate(360deg);
+}
+
+button:nth-child(2):hover~button {
+    transform: rotate(360deg);
+}
+
+button:nth-child(3):hover~button {
+    transform: rotate(360deg);
+}
+
+button:nth-child(4):hover~button {
+    transform: rotate(360deg);
+}
+
+button:nth-child(5):hover~button {
+    transform: rotate(360deg);
+}
+
+/*nuestro horario*/
+.text-idexthree {
+    display: flex;
+    flex-direction: column;
+    margin: 40px;
+}
+
+.t-strong {
+    text-align: center;
+    font-size: 30px;
+    flex-direction: column;
+    margin: 30px;
+    display: inline-block;
+}
+
+.p-three {
+    text-align: center;
+    flex-direction: column;
+    font-size: 20px;
+}
+
+/*portada carta*/
+
+.parallax {
+    background-image: url(../assets/images/pastas-carta.jpg);
+    background-attachment: fixed;
+    background-position: 69%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 60rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 0 70px 0;
+    background-blend-mode: soft-light;
+    background-color: rgba(84, 81, 82, 0.40);
+}
+
+/*estilo para todos los titulos y botones de los parallax*/
+
+/*TITULOS DE TODOS LOS BANERS*/
+.title-port {
+    height: auto;
+    max-width: 100%;
+    font-size: 60px;
+    text-align: center;
+    color: #fff;
+    word-spacing: 17px;
+    padding-bottom: 50px;
+}
+/* cards carta*/
+
+.cards-cosina {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0;
+    font-size: 22px;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 520px;
+    border: 0px solid rgb(244, 237, 237);
+    box-shadow: 2px 1px 4px 4px #f5eeeed1;
+    border-radius: 15px;
+    font-family: sans-serif;
+    margin: 20px;
+    transition: all 400ms ease;
+    justify-content: center;
+    cursor: default;
+}
+
+.cards:hover {
+    transform: translateY(-3%);
+
+
+}
+
+.title {
+    font-size: 24px;
+    padding: 10px 10px 0 10px;
+    text-align: center;
+}
+
+.card-body-card {
+    padding: 10px;
+    text-align: center;
+}
+
+.card-name {
+    background:#f30b0b ;
+    border-radius: 0 0 10px 10px;
+    padding: 20px;
+    text-align: center;
+
+}
+
+
+.card-body-card .image-card {
+    margin: 10px;
+    object-fit: cover;
+}
+
+
+.card-name p {
+    text-decoration: none;
+    color: white;
+
+}
+
+.card-name p::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+
+}
+
+
+
+    /* Nuestra cocina*/
+    .sectionCarta {
+        text-align: center;
+        margin: 40px 40px 0 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cont_cosina {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .h1-cosina {
+        font-size: 30px;
+        margin: 15px;
+    }
+
+
+    .p-cosina {
+        text-align: center;
+        margin: 30px;
+    }
+
+    .img-chef {
+        margin: 60px 0 20px 0;
+        object-fit: cover;
+
+    }
+
+    @media(max-width:900px) {
+        .img-chef img {
+            width: 100%;
+            margin-bottom: 0;
+            object-fit: cover;
+        }
+
+        .image-card {
+            width: 20rem;
+            height: 30rem;
+        }
+
+        .title-port {
+            font-size: 45px;
+        }
+
+    }
+
+
+    /*especialidades*/
+
+    /*portada*/
+
+    .parallax-2 {
+        background-image: url(../assets/images/especialidades-banner.jpg);
+        background-attachment: fixed;
+        background-position: 40%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 60rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 0 70px 0;
+        background-blend-mode: soft-light;
+        background-color: rgba(91, 83, 86, 0.705);
+
+    }
+
+    /*especialidades texto y fotos*/
+
+    .s-especialidades {
+        text-align: center;
+        justify-content: center;
+        flex-direction: column;
+        font-size: 25px;
+        margin: 40px;
+
+    }
+
+    /*booststrap carrusel*/
+
+
+    .tituloSlaider {
+        font-size: 50px;
+    }
+
+    .parrafoSlaider {
+        font-size: 30px;
+    }
+
+    #carouselExampleCaptions {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+
+    /*delivery y servicios*/
+
+    /*portada*/
+
+    .parallax-3 {
+        background-image: url(../assets/images/delivery-banner.jpg);
+        background-attachment: fixed;
+        background-position: 29%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 60rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 0 70px 0;
+        background-blend-mode: soft-light;
+        background-color: rgba(106, 90, 96, 0.40);
+    }
+
+    /*texto y fotos*/
+    .d-servicios {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .title-d {
+        text-align: center;
+
+    }
+
+    .sub-titled {
+        text-align: center;
+        font-size: 25px;
+        margin: 10px;
+
+    }
+
+    .text-d {
+        text-align: center;
+        font-size: 25px;
+        margin: 20px;
+    }
+
+    .map {
+        justify-content: center;
+        align-items: center;
+        margin: 20px 8px;
+    }
+
+    @media (max-width:490px) {
+        .map{
+            width:100% ;
+        }
+    }
+    /*nosotros*/
+    .parallax-4 {
+        background-image: url(../assets/images/nosotros-banner.jpg);
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 60rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-blend-mode: soft-light;
+        background-color: rgba(87, 81, 83, 0.705);
+    }
+
+
+    .nos-his {
+        display: flex;
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        flex-direction: column;
+        margin: 0 0 30px 0;
+    }
+
+    .his-cont {
+        background-color: #f30b0b;
+        padding: 10px;
+        color: #edf0f1;
+    }
+
+    .subtitle-nos {
+        text-align: center;
+        font-size: 30px;
+        margin: 10px;
+        padding: 20px;
+    }
+
+    .title-nos {
+        font-size: 40px;
+        margin: 40px 0 20px 0;
+    }
+
+    .p-nos {
+        font-size: 25px;
+        padding: 20px;
+    }
+
+    .direcion strong {
+
+        display: flex;
+        text-align: center;
+        font-size: 30px;
+        flex-direction: column;
+        margin: 10px;
+    }
+
+    /*reserva*/
+
+    .portadaRes {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .reTitle {
+        font-size: 50px;
+        text-align: center;
+        color: #f8f5f5;
+        margin-top: 70px;
+    }
+
+
+    .reservaTitle {
+        text-align: center;
+        font-size: 30px;
+        margin: 50px;
+        color: #faefef;
+    }
+
+    .p-res {
+        text-align: center;
+        font-size: 25px;
+        flex-direction: column;
+        margin: 30px;
+        color: #f8f2f2;
+    }
+
+
+    /* formulario*/
+    /*fondo formulario*/
+
+    .b-reserva {
+        background-image: url(../assets/images/fon-formulario.jpg);
+        background-size: 100vw 100vh;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        margin: 0;
+        background-blend-mode: soft-light;
+        background-color: rgba(223, 164, 129, 0.705);
+    }
+
+    .formOne {
+        margin: 30px;
+    }
+
+    form {
+        width: 450px;
+        margin: auto;
+        background: rgb(0, 0, 0, 0.4);
+        padding: 20px 20px 20px 20px;
+        margin-top: 20px;
+        border-radius: 7px;
+    }
+
+
+    input,
+    textarea {
+        width: 100%;
+        margin-bottom: 20px;
+        padding: 7px;
+        font-size: 17px;
+
+
+    }
+
+    textarea {
+        min-height: 100px;
+        max-width: 100%;
+        max-height: 200px;
+    }
+
+    #boton {
+        background: #f6f2f3;
+        color: #141414;
+        padding: 17px;
+        transition: all 0.2s;
+        border-radius: 30PX;
+        transition: transform 0.2s;
+    }
+
+    #boton:hover {
+        background-color: #f30b0b;
+        color: rgb(11, 11, 11);
+        cursor: pointer;
+        transform: translateY(-3px);
+        transform: scale(1.1);
+    }
+
+
+
+
+    #boton:active {
+        transform: translateY(3px);
+    }
+
+
+    @media (max-width: 390px) {
+        form {
+            width: 100%;
+        }
+
+
+    }
+
+
+    /* footer */
+
+    .footer-icon i {
+        font-size: 30px;
+        color: #131313;
+    }
+
+    .footer-icon i:hover {
+        color: #ede1e1;
+    }
+
+    .footer-page {
+        width: 100%;
+        background-color: #f30b0b;
+        margin-top: 30px;
+    }
+
+    .footer-page.grup-1 {
+        width: 100%;
+        max-width: 1200px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(3 1fr);
+        grid-gap: 50px;
+        padding: 45px 0px
+    }
+
+    .footer-page.grup-1 .box {
+        width: 250px;
+
+    }
+
+    .footer-page .grup-1 h2.box {
+        color: #e3d8d8;
+        margin-bottom: 25px;
+        font-size: 30px;
+    }
+
+    .footer-icon {
+
+        display: flex;
+        width: 40px;
+        height: 40px;
+        line-height: 45px;
+        text-align: center;
+        margin: 30px 20px;
+        line-height: 100%;
+        size: 9px;
+        list-style: none;
+        font-size: 1.1rem;
+
+    }
+
+
+    .footer-icon li {
+        padding: 10px;
+
+    }
+
+
+    .footer-page .grup-2 {
+        background-color: rgb(21, 17, 8);
+        padding: 15px 10px;
+        text-align: center;
+        color: #f3eded;
+
+    }
