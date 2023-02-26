@@ -216,8 +216,8 @@
 
     }
 
-    .contenedor-portada h6 {
-        font-size: 55px;
+    .contenedor-portada h6{
+        font-size:43px;
     }
 
     .logo-fondo {
@@ -230,8 +230,6 @@
     }
 
 }
-
-
 
 /*contenido index*/
 /*Ricas comidas ,ingredientes frescos*/
@@ -695,6 +693,10 @@ button:nth-child(5):hover~button {
     color: #787575;
     font-weight: bold;
 }
+.dire{
+    text-align: center;
+}
+
 
 .text-d {
     text-align: center;
@@ -708,12 +710,13 @@ button:nth-child(5):hover~button {
 }
 
 .map {
+    width:80% ;
     justify-content: center;
     align-items: center;
     margin: 20px 8px;
 }
 
-/*acordeon bootstrap*/
+/*acordeon */
 .acordeon {
     width: 60%;
     padding: 40px;
@@ -754,16 +757,13 @@ summary {
     margin-top: 40px;
 }
 
+
+
 @media (max-width: 390px) {
     .acordeon {
         width: 100%;
     }
-
-    /*boton delivery*/
-    .btn-delivery {
-        margin: 0;
-        right: 120px;
-    }
+  
 
 }
 
@@ -848,7 +848,7 @@ summary {
 
 .reservaTitle {
     text-align: center;
-    font-size: 30px;
+    font-size: 25px;
     margin: 50px;
     color: #0b0a0a;
     font-weight: bold;
