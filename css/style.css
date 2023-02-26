@@ -232,7 +232,7 @@
 }
 
 /*contenido index*/
-/*Ricas comidas ,ingredientes frescos*/
+/*Ricas comidas,ingredientes frescos*/
 .textIndexone {
     display: flex;
     flex-direction: column;
@@ -242,7 +242,7 @@
 }
 
 .titleOne {
-    font-size: 1, 9rem;
+    font-size:50px;
     margin: 90px 0 10px 0;
     text-align: center;
     justify-content: center;
