@@ -17,6 +17,9 @@
     <!--Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!--LIBRERIA AOS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 
 </head>
 
@@ -36,7 +39,7 @@
                             <li class="nav-item enlaces-b">
                                 <a class="nav-link  enlaces-b" aria-current="page" href="./index.html">INICIO</a>
                             </li>
-                            
+
                             <li class="nav-item enlaces-b">
                                 <a class="nav-link  enlaces-b" aria-current="page" href="./pages/carta.html">CARTA</a>
                             </li>
@@ -69,14 +72,18 @@
         </nav>
     </header>
 
+    <!--boton whatsaap-->
+    <a href="https://api.whatsapp.com/send?phone=Tu-n%C3%B9mero-aqu%C3%AD" class="btn-wsp" target="_blank"><i
+            class="fa fa-whatsapp"></i></a>
+
 
     <div class="portada-b">
         <div class="contenedor-portada">
-            <h6>BIENVENIDOS</h6>
+            <h6 data-aos="zoom-in-down">BIENVENIDOS</h6>
+            <div data-aos="zoom-in-down" class="logo-transparente"><img class="logo-fondo"
+                    src="./assets/images/logo-transparente.png" alt="logo transparente"></div>
 
-            <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. eveniet dicta praesentium
-                dolor cum quibusdam cupiditate. Doloremque, vel voluptatibus.</h5>
-            <div class=boton>
+            <div data-aos="zoom-in-down" class=boton>
                 <div class=reserva-b>
 
                     <a href="pages/reserva.html">Reserva</a>
@@ -89,29 +96,42 @@
 
     <main class="textIndexone">
 
-        <h1 class="titleOne">Ricas comidas ,ingredientes frescos</h1>
+        <h1 data-aos="fade-up" data-aos-duration="3000" class="titleOne">Ricas comidas ,ingredientes frescos</h1>
 
-        <p class="p-one">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores adipisci architecto ipsa
-            ducimus quos? Sapiente, eum aliquam libero corporis, nulla saepe eius ducimus repellendus maiores enim nemo
-            et. Velit, est!
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero ea odio fuga dolorem maiores, sunt distinctio
-            temporibus officia possimus quae voluptates fugiat molestiae quisquam voluptas ad ipsam maxime dolores
-            inventore!
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores adipisci architecto ipsa ducimus quos?
-            Sapiente, eum aliquam libero corporis, nulla saepe eius ducimus repellendus maiores enim nemo et. Velit,
-            est!
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero ea odio fuga dolorem maiores, sunt distinctio
-            temporibus officia possimus quae voluptates fugiat molestiae quisquam voluptas ad ipsam maxime dolores
-            inventore!
+        <p data-aos="fade-up" data-aos-duration="3000" class="p-one">En Bodegón Balvanera, sabemos que la clave para
+            preparar platos deliciosos es utilizar
+            ingredientes frescos y de calidad. Por eso, seleccionamos cuidadosamente cada uno de los ingredientes que
+            utilizamos en nuestra cocina, para asegurarnos de que nuestros platos tengan un sabor auténtico y una
+            calidad excepcional.
+
+            Desde nuestras carnes asadas a la parrilla, hasta nuestras pastas frescas y nuestras ensaladas de vegetales
+            de temporada, todos nuestros platos están elaborados con ingredientes frescos y naturales, cultivados
+            localmente siempre que sea posible. Nuestros proveedores son cuidadosamente seleccionados para garantizar
+            que siempre recibimos los mejores ingredientes.
+
+            Nuestros chefs expertos utilizan técnicas culinarias tradicionales para preparar nuestros platos, y siempre
+            están en busca de nuevas formas de innovar y sorprender a nuestros comensales con sabores nuevos e
+            inesperados. Siempre estamos en busca de nuevas ideas y técnicas para llevar la experiencia gastronómica del
+            Bodegón Balvanera al siguiente nivel.
+
+            Además, nuestro menú está diseñado para satisfacer a todos los gustos y preferencias. Ofrecemos una amplia
+            selección de opciones vegetarianas y veganas, así como platos sin gluten, para que todos puedan disfrutar de
+            una comida deliciosa en nuestro restaurante.
+
+            En resumen, en Bodegón Balvanera puedes estar seguro de que siempre encontrarás comida rica y auténtica,
+            preparada con los ingredientes más frescos y naturales, y con la pasión y el conocimiento de nuestros chefs
+            expertos. ¡Ven a visitarnos y disfruta de una experiencia culinaria única!
+
         </p>
 
-        <img class="img-one" src="assets/images/pareja-comiendo.jpg" alt="gente en el restaurate">
+        <img data-aos="fade-up" data-aos-duration="3000" class="img-one" src="assets/images/pareja-comiendo.jpg"
+            alt="gente en el restaurate">
 
     </main>
 
     <section class="testimonios">
         <div class="titulo_reseña">
-            <h1>
+            <h1 data-aos="fade-up" data-aos-duration="3000">
                 Nuestros clientes nos recomiendan
             </h1>
         </div>
@@ -121,7 +141,7 @@
     <div class="testimonios_contenedor">
 
         <!--caja1-->
-        <div class="testimonios_caja">
+        <div data-aos="fade-up" data-aos-duration="3000" class="testimonios_caja">
             <div class="caja-top">
                 <div class="perfil">
                     <div class="perfil-img">
@@ -169,7 +189,9 @@
 
             <!--comentarios clientes-->
             <div class="comentarios-clientes">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, quos.</p>
+                <p> El ambiente es acogedor y la atención es excelente. Pero lo que realmente me sorprendió fue la
+                    calidad de la comida. Los ingredientes son frescos y la sazón es perfecta. Sin duda volveré a
+                    visitar este lugar..</p>
             </div>
 
 
@@ -178,17 +200,17 @@
 
 
         <!--caja2-->
-        <div class="testimonios_caja">
+        <div data-aos="fade-up" data-aos-duration="3000" class="testimonios_caja">
             <div class="caja-top">
                 <div class="perfil">
                     <div class="perfil-img">
-                        <img src="./assets/images/usuario-uno.jpg" alt="imagen perfil">
+                        <img src="./assets/images/usuario-dos.jpg" alt="imagen perfil">
                     </div>
                     <!--nombre y usuario-->
 
                     <div class="name-user">
-                        <strong>Juan Perez</strong>
-                        <span>@Jperez</span>
+                        <strong>Martina Gonzales</strong>
+                        <span>@margonzales</span>
                     </div>
                 </div>
 
@@ -226,7 +248,9 @@
 
             <!--comentarios clientes-->
             <div class="comentarios-clientes">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, quos.</p>
+                <p>Desde que descubrí Bodegón Balvanera, se ha convertido en mi lugar favorito para disfrutar de una
+                    buena comida con amigos y familiares. La parrillada es espectacular y los postres son deliciosos.
+                    Recomiendo 100% este restaurante.</p>
             </div>
 
 
@@ -234,17 +258,17 @@
         </div>
 
         <!--caja3-->
-        <div class="testimonios_caja">
+        <div data-aos="fade-up" data-aos-duration="3000" class="testimonios_caja">
             <div class="caja-top">
                 <div class="perfil">
                     <div class="perfil-img">
-                        <img src="./assets/images/usuario-uno.jpg" alt="perfil">
+                        <img src="./assets/images/usuario-tres.jpg" alt="perfil">
                     </div>
                     <!--nombre y usuario-->
 
                     <div class="name-user">
-                        <strong>Juan Perez</strong>
-                        <span>@Jperez</span>
+                        <strong>Sofia Gonzales</strong>
+                        <span>@sofiag</span>
                     </div>
                 </div>
 
@@ -256,7 +280,6 @@
                         <i class="fas fa-star"></i>
                     </button>
 
-
                     <button>
                         <i class="fas fa-star"></i>
                     </button>
@@ -275,31 +298,31 @@
                     <button>
                         <i class="fas fa-star"></i>
                     </button>
-
-
 
                 </div>
             </div>
 
             <!--comentarios clientes-->
             <div class="comentarios-clientes">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, quos.</p>
+                <p>Bodegón Balvanera es una joya escondida en el corazón de la ciudad. Los sabores son auténticos y la
+                    comida es exquisita. Además, el personal es amable y atento. Definitivamente uno de los mejores
+                    restaurantes de la zona</p>
             </div>
 
         </div>
 
         <!--caja4-->
-        <div class="testimonios_caja">
+        <div data-aos="fade-up" data-aos-duration="3000" class="testimonios_caja">
             <div class="caja-top">
                 <div class="perfil">
                     <div class="perfil-img">
-                        <img src="./assets/images/usuario-uno.jpg" alt="perfil">
+                        <img src="./assets/images/usuario-cuatro.jpg" alt="perfil">
                     </div>
                     <!--nombre y usuario-->
 
                     <div class="name-user">
-                        <strong>Juan Perez</strong>
-                        <span>@Jperez</span>
+                        <strong>Alejandro Torres</strong>
+                        <span>@torresa</span>
                     </div>
                 </div>
 
@@ -337,10 +360,9 @@
 
             <!--comentarios clientes-->
             <div class="comentarios-clientes">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, quos.</p>
+                <p> El ambiente es muy agradable, la atención es impecable y la comida es simplemente espectacular. Los
+                    ingredientes son frescos y la preparación es única. Definitivamente volveré pronto.</p>
             </div>
-
-
 
         </div>
 
@@ -350,20 +372,22 @@
             <div class="grup-1">
 
                 <div class="box"></div>
-                <h2>Lorem ipsum dolor</h2>
-                <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, dolores harum magni.</P>
+                <h2 class="box-h2">BodegonBalvanera@gmail.com</h2>
+                <P class="box-p"><strong>Lavalle 850, Balvanera, Ciudad Autónoma deBuenos
+                        Aires,Argentina.</strong>
+                </P>
                 <ul class="footer-icon">
                     <li> <a href=""><i class="fa fa-instagram"></i></a></li>
                     <li> <a href=""><i class="fa fa-whatsapp"></i></a></li>
                     <li> <a href=""><i class="fa fa-facebook"></i></a></li>
-                    <li> <a href="#nav"><i class="fa fa-home"></i></a></li>
+                    <li> <a href="./index.html"><i class="fa fa-home"></i></a></li>
                 </ul>
 
             </div>
 
             <div class="grup-2">
 
-                <small>&copy;2022 <b>SyD</b> -Todos los drechos reservados </small>
+                <small class="small-2">&copy;2022 <b>SyD</b> -Todos los drechos reservados </small>
 
             </div>
 
@@ -373,6 +397,13 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
             crossorigin="anonymous"></script>
+
+        <!--SCRIP AOS-->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+
 </body>
 
 </html>

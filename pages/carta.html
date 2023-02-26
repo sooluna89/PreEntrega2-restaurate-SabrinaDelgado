@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bodegon Balvanera Menu</title>
     <!--css-->
-    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/style.css">
     <!--font-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,7 +17,9 @@
     <!--Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-
+    <!--LIBRERIA AOS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
 
 <body>
     <!--Boostsrap nav-->
@@ -69,12 +71,14 @@
         </nav>
     </header>
 
-    <!--Portada-->
+    <!--boton whatsaap-->
+    <a href="https://api.whatsapp.com/send?phone=Tu-n%C3%B9mero-aqu%C3%AD" class="btn-wsp" target="_blank"><i
+            class="fa fa-whatsapp"></i></a <!--Portada-->
 
     <div class="parallax">
-        <h2 class="title-port">CARTA</h2>
+        <h2 data-aos="fade-up" data-aos-duration="3000" class="title-port">CARTA</h2>
 
-        <div class=boton>
+        <div data-aos="fade-up" data-aos-duration="3000"  class=boton>
             <div class=reserva-b>
 
                 <a href="../pages/reserva.html">Reserva</a>
@@ -88,27 +92,47 @@
 
     <div class="cards-cosina">
         <div class="cards">
-            <div class="title">Una tarjeta básica</div>
+            <div class="title">CONSULTAR VARIEDADES</div>
             <div class="card-body-card">
                 <img class="image-card" src="../assets/images/entrada-carta.jpg" alt="entrada" width="450px"
                     height="500px">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde perspiciatis saepe adipisci!
-                    Quae voluptatem sapiente nisi distinctio aut, odio minus. Sint facere alias aut et optio dolore,
-                    commodi dolor adipisci.</p>
+
+                <ul>
+                    <li>Picada tradicional: incluye una selección de fiambres y quesos de alta calidad, aceitunas,
+                        tomates secos, pan casero y salsa criolla.</li>
+                    <li>Picada de mar: incluye mariscos frescos como mejillones, calamares y
+                        langostinos, además de aceitunas, tomates secos, pan casero.</li>
+                    <li>Picada de quesos: incluye una selección de quesos artesanales de diferentes sabores y texturas.
+                    </li>
+                    <li>Picada de embutidos: incluye una selección de embutidos de alta calidad como salame, chorizo y
+                        jamón crudo, acompañados de aceitunas, tomates secos, pan casero y salsa criolla.</li>
+                    <li>Picada mixta: incluye una selección de fiambres, quesos, aceitunas, tomates seco con pan casero
+                        y salsa criolla</li>
+
+                </ul>
             </div>
             <div class="card-name">
-                <p>NOMBRE</p>
+                <p>PICADAS</p>
             </div>
         </div>
 
         <div class="cards">
-            <div class="title">Una tarjeta básica</div>
+            <div class="title">CONSULTAR VARIEDADES</div>
             <div class="card-body-card">
                 <img class="image-card" src="../assets/images/ensalada-carta.jpg" alt="ensalada" width="450px"
                     height="500px">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde perspiciatis saepe adipisci!
-                    Quae voluptatem sapiente nisi distinctio aut, odio minus. Sint facere alias aut et optio dolore,
-                    commodi dolor adipisci.</p>
+                <ul>
+                    <li>Ensalada mixta: lechuga, tomate, zanahoria rallada, huevo duro y aceitunas negras, aderezada con
+                        vinagreta de la casa.</li>
+                    <li>Ensalada César: lechuga romana, crutones de pan, queso parmesano y pollo a la parrilla,
+                        aderezada con nuestra salsa César casera</li>
+                    <li>Ensalada Caprese: tomate, mozzarella fresca y hojas de albahaca fresca, aderezada con aceite de
+                        oliva y vinagre balsámico.</li>
+                    <li>Ensalada de remolacha: remolacha asada, queso de cabra, nueces tostadas y rúcula, aderezada con
+                        vinagreta de miel y mostaza.</li>
+                    <li>Ensalada de papas: papas cocidas, huevo duro, cebolla morada y pepinillos, aderezada con
+                        mayonesa casera</li>
+                </ul>
             </div>
             <div class="card-name">
                 <p>NOMBRE</p>
@@ -116,178 +140,211 @@
         </div>
 
         <div class="cards">
-            <div class="title">Una tarjeta básica</div>
+            <div class="title">CONSULTAR VARIEDADES</div>
             <div class="card-body-card">
                 <img class="image-card" src="../assets/images/parrillada-carta.jpg" alt="parrillada" width="450px"
                     height="500px">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde perspiciatis saepe adipisci!
-                    Quae voluptatem sapiente nisi distinctio aut, odio minus. Sint facere alias aut et optio dolore,
-                    commodi dolor adipisci.</p>
+                <ul>
+                    <li>Asado de tira</li>
+                    <li>Bife de chorizo</li>
+                    <li>Matambre de cerdo</li>
+                    <li> Chorizo</li>
+                    <li> Pollo a la parrilla</li>
+                </ul>
+                <p>Nos esforzamos por ofrecer una variedad de opciones de parrilla que satisfagan todos los gustos.
+                    Todas nuestras carnes son de la mejor calidad y son cocinadas a la perfección.</p>
             </div>
             <div class="card-name">
-                <p>NOMBRE</p>
+                <p>PARRILADA</p>
             </div>
         </div>
 
 
         <div class="cards">
-            <div class="title">Una tarjeta básica</div>
+            <div class="title">CONSULTAR VARIEDADES</div>
             <div class="card-body-card">
                 <img class="image-card" src="../assets/images/guarniciones.carta.jpg" alt="guarniciones" width="450px"
                     height="500px">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde perspiciatis saepe adipisci!
-                    Quae voluptatem sapiente nisi distinctio aut, odio minus. Sint facere alias aut et optio dolore,
-                    commodi dolor adipisci.</p>
+                <ul>
+                    <li>Papas fritas</li>
+                    <li>Huevos fritos</li>
+                    <li>Puré de calabaza</li>
+                    <li>Puré de papas</li>
+                    <li>Puré mixto</li>
+                </ul>
+                <p>Guarniciones preparadas con ingredientes frescos y aderezadas con nuestra especial sazón. Ven y
+                    disfruta de una deliciosa experiencia de parrilla en Bodegón Balvanera.</p>
+
             </div>
+
             <div class="card-name">
-                <p>NOMBRE</p>
+                <p>GUARNICIONES</p>
             </div>
+
         </div>
 
 
         <div class="cards">
-            <div class="title">Una tarjeta básica</div>
+            <div class="title">CONSULTAR VARIEDADES</div>
             <div class="card-body-card">
                 <img class="image-card" src="../assets/images/tortilla-omelletes-carta.jpg" alt="imagen" width="450px"
                     height="500px">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde perspiciatis saepe adipisci!
-                    Quae voluptatem sapiente nisi distinctio aut, odio minus. Sint facere alias aut et optio dolore,
-                    commodi dolor adipisci.</p>
+                <p>En Bodegón Balvanera, ofrecemos una variedad de omelettes y tortillas llenas de sabor. Entre nuestras
+                    opciones, puedes encontrar el clásico omelette de jamón y queso, el sabroso omelette de papa y
+                    cebolla, y el fresco omelette de acelga. También ofrecemos una variedad de tortillas, todas
+                    preparadas con ingredientes frescos y de alta calidad. Ven a disfrutar de nuestras omelettes y
+                    tortillas y descubre nuevas formas de saborear tus platos favoritos.</p>
             </div>
             <div class="card-name">
-                <p>NOMBRE</p>
+                <p>OMELETTES Y TORTILLAS</p>
             </div>
         </div>
 
+
+
         <div class="cards">
-            <div class="title">Una tarjeta básica</div>
+            <div class="title">COMSULTAR VARIEDADES</div>
             <div class="card-body-card">
                 <img class="image-card" src="../assets/images/pastas-salsas-carta.jpg" alt="pastas" width="450px"
                     height="500px">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde perspiciatis saepe adipisci!
-                    Quae voluptatem sapiente nisi distinctio aut, odio minus. Sint facere alias aut et optio dolore,
-                    commodi dolor adipisci.</p>
+                <p>Amplia variedad de pastas y salsas para satisfacer todos los gustos y necesidades. Entre nuestras
+                    opciones, puedes encontrar la clásica pasta con salsa bolognesa, la sabrosa pasta con salsa de
+                    champiñones, y la fresca pasta con salsa de tomate y albahaca. También ofrecemos opciones
+                    vegetarianas como la pasta con salsa de pesto y la pasta con salsa de espinaca y ricotta. Además,
+                    nuestras pastas son preparadas al dente y servidas con queso parmesano rallado.
+                </p>
             </div>
             <div class="card-name">
-                <p>NOMBRE</p>
+                <p>PASTAS Y SALSAS</p>
             </div>
         </div>
 
 
         <div class="cards">
-            <div class="title">Una tarjeta básica</div>
+            <div class="title">CONSULTAR VARIEDADES</div>
             <div class="card-body-card">
                 <img class="image-card" src="../assets/images/postres-carta.jpg" alt="postres" width="450px"
                     height="500px">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde perspiciatis saepe adipisci!
-                    Quae voluptatem sapiente nisi distinctio aut, odio minus. Sint facere alias aut et optio dolore,
-                    commodi dolor adipisci.</p>
+                <p>nos encanta ofrecer una amplia variedad de postres deliciosos para terminar tu comida con un toque
+                    dulce. Entre nuestras opciones, puedes encontrar el clásico budín de pan, el suave flan, y el
+                    delicioso queso y dulce de membrillo o batata. Además, también ofrecemos una variedad de opciones de
+                    helado, todos preparados con ingredientes frescos y de alta calidad. Ven a disfrutar de nuestros
+                    postres y descubre nuevas formas de saborear lo dulce.</p>
             </div>
             <div class="card-name">
-                <p>NOMBRE</p>
+                <p>POSTRES</p>
             </div>
         </div>
 
 
         <div class="cards">
-            <div class="title">Una tarjeta básica</div>
+            <div class="title">CONSULTAR VARIEDADES</div>
             <div class="card-body-card">
                 <img class="image-card" src="../assets/images/cafeteria-carta.jpg" alt="cafeteria" width="450px"
                     height="500px">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde perspiciatis saepe adipisci!
-                    Quae voluptatem sapiente nisi distinctio aut, odio minus. Sint facere alias aut et optio dolore,
-                    commodi dolor adipisci.</p>
+                <p>En Bodegón Balvanera, sabemos que una buena taza de café o té es esencial para comenzar o terminar el
+                    día. Es por eso que ofrecemos una variedad de bebidas calientes, como café solo, café doble, café
+                    con crema, té y café con leche. Además, nuestro café es preparado con granos de alta calidad y
+                    siempre servido caliente para que puedas disfrutar de su sabor completo. Ven a nuestra cafetería y
+                    relájate con una deliciosa taza de café o té.</p>
             </div>
             <div class="card-name">
-                <p>NOMBRE</p>
+                <p>CAFES</p>
             </div>
         </div>
 
 
         <div class="cards">
-            <div class="title">Una tarjeta básica</div>
+            <div class="title">CONSULTAR VARIEDADES</div>
             <div class="card-body-card">
                 <img class="image-card" src="../assets/images/bebidas-sin-alcohol-.jpg" alt="bebidas si acohol"
                     width="450px" height="500px">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde perspiciatis saepe adipisci!
-                    Quae voluptatem sapiente nisi distinctio aut, odio minus. Sint facere alias aut et optio dolore,
-                    commodi dolor adipisci.</p>
+                <p>En Bodegón Balvanera, ofrecemos una amplia variedad de bebidas sin alcohol para acompañar tu comida.
+                    Desde refrescantes gaseosas hasta agua mineral, tenemos todo lo que necesitas para saciar tu sed.
+                    También ofrecemos agua saborizada, perfecta para aquellos que buscan una opción más saludable sin
+                    comprometer el sabor. Si prefieres algo más clásico, también ofrecemos agua con limón exprimido. Ven
+                    y descubre nuestra selección de bebidas sin alcohol y disfruta de una experiencia refrescante y
+                    deliciosa.</p>
             </div>
             <div class="card-name">
-                <p>NOMBRE</p>
+                <p>BEBIDAS SIN ALCOHOL</p>
             </div>
         </div>
 
 
 
         <div class="cards">
-            <div class="title">Una tarjeta básica</div>
+            <div class="title">CONSULTAR VARIEDADES</div>
             <div class="card-body-card">
                 <img class="image-card" src="../assets/images/bebidas-alcohol-.jpg" alt="bebidas con alchol"
                     width="450px" height="500px">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde perspiciatis saepe adipisci!
-                    Quae voluptatem sapiente nisi distinctio aut, odio minus. Sint facere alias aut et optio dolore,
-                    commodi dolor adipisci.</p>
+                <p>Ofrecemos una variedad de bebidas alcohólicas para aquellos que desean disfrutar de una bebida más
+                    fuerte. Si te gusta la sidra, ofrecemos una selección de sidras locales y artesanales. También
+                    tenemos champagne y cervezas, tanto nacionales como internacionales, para que puedas disfrutar de
+                    una bebida con amigos o familiares. Además, ofrecemos una selección de vinos de alta calidad, tanto
+                    nacionales como internacionales, para que puedas maridar tu comida con el vino perfecto.Disfruta de
+                    nuestras bebidas!</p>
             </div>
             <div class="card-name">
-                <p>NOMBRE</p>
+                <p>BEBIDAS CON ALCOHOL</p>
             </div>
         </div>
+    </div>
+    <!-- secion nuestra cosina-->
+    <section class="sectionCarta">
+        <div class="cont_cosina">
+            <h1 data-aos="fade-up" data-aos-duration="3000" class="t-cosina">Nuestra cocina</h1>
+            <p data-aos="fade-up" data-aos-duration="3000"class="p-cosina">En Bodegón Balvanera, nuestra cocina es el corazón de nuestro restaurante. Nos
+                enorgullece ofrecer una cocina tradicional, hecha con ingredientes frescos y de alta calidad. Todos
+                nuestros platos son preparados por chefs experimentados y apasionados por la gastronomía, quienes se
+                esfuerzan por ofrecer la mejor experiencia culinaria a nuestros clientes.
 
-        <!-- secion nuestra cosina-->
-        <section class="sectionCarta">
-            <div class="cont_cosina">
-                <h1 class="t-cosina">Nuestra cocina</h1>
-                <p class="p-cosina">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit placeat provident ex
-                    nemo incidunt nulla
-                    non nihil perspiciatis facere ad!
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit placeat provident ex nemo incidunt
-                    nulla
-                    non nihil perspiciatis facere ad!
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit placeat provident ex nemo incidunt
-                    nulla
-                    non nihil perspiciatis facere ad!
+                Ofrecemos una amplia variedad de platos, desde carnes a la parrilla hasta pastas caseras y ensaladas
+                frescas. Todos nuestros ingredientes son seleccionados cuidadosamente y preparados con técnicas
+                tradicionales para que puedas disfrutar de los sabores auténticos de nuestra cocina.
 
-                </p>
-            </div>
+                En Bodegón Balvanera, no solo nos preocupamos por la calidad de nuestra comida, sino que también nos
+                esforzamos por crear un ambiente acogedor y cálido para nuestros clientes. Queremos que te sientas
+                como en casa cuando vengas a visitarnos, y que disfrutes de una experiencia culinaria única en
+                nuestro restaurante. Ven a visitarnos y descubre por qué nuestra cocina es única y especial.
 
-        </section>
-        <div class="img-chef">
-            <img src="../assets/images/hombre-cosinando.jpg" alt="hombre cosina" width="800px" height="550px">
-
+            </p>
         </div>
 
+    </section>
+    <div class="img-chef">
+        <img data-aos="fade-up" data-aos-duration="3000" src="../assets/images/hombre-cosinando.jpg" alt="hombre cosina" width="800px" height="550px">
+    </div>
 
-        <footer class="footer-page">
+    <footer class="footer-page">
+        <div class="grup-1">
+            <div class="box"></div>
+            <h2 class="box-h2">BodegonBalvanera@gmail.com</h2>
+            <P class="box-p"><strong>Lavalle 850, Balvanera, Ciudad Autónoma deBuenos
+                    Aires,Argentina.</strong>
+            </P>
+            <ul class="footer-icon">
+                <li> <a href=""><i class="fa fa-instagram"></i></a></li>
+                <li> <a href=""><i class="fa fa-whatsapp"></i></a></li>
+                <li> <a href=""><i class="fa fa-facebook"></i></a></li>
+                <li> <a href="../index.html"><i class="fa fa-home"></i></a></li>
+            </ul>
+        </div>
 
-            <div class="grup-1">
+        <div class="grup-2">
+            <small class="small-2">&copy;2022 <b>SyD</b> -Todos los drechos reservados</small>
+        </div>
+    </footer>
 
-                <div class="box"></div>
-                <h2>Lorem ipsum dolor</h2>
-                <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, dolores harum magni.</P>
-                <ul class="footer-icon">
-                    <li> <a href=""><i class="fa fa-instagram"></i></a></li>
-                    <li> <a href=""><i class="fa fa-whatsapp"></i></a></li>
-                    <li> <a href=""><i class="fa fa-facebook"></i></a></li>
-                    <li> <a href="#nav"><i class="fa fa-home"></i></a></li>
-                </ul>
-
-            </div>
-
-            <div>
-
-                <div class="grup-2">
-
-                    <small>&copy;2022 <b>SyD</b> -Todos los drechos reservados </small>
-
-                </div>
-
-        </footer>
-        <!--Bootstrap-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-            crossorigin="anonymous"></script>
-
+    <!--Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <!--SCRIP AOS-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

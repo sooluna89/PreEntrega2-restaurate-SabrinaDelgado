@@ -17,7 +17,8 @@
     <!--Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-
+    <!--LIBRERIA AOS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 </head>
 
@@ -38,7 +39,7 @@
                             <li class="nav-item enlaces-b">
                                 <a class="nav-link  enlaces-b" aria-current="page" href="../index.html">INICIO</a>
                             </li>
-                            
+
                             <li class="nav-item enlaces-b">
                                 <a class="nav-link  enlaces-b" aria-current="page" href="../pages/carta.html">CARTA</a>
                             </li>
@@ -71,27 +72,29 @@
         </nav>
     </header>
 
-    </header>
-
-    <!--Portada-->
+    <!--boton whatsaap-->
+    <a href="https://api.whatsapp.com/send?phone=Tu-n%C3%B9mero-aqu%C3%AD" class="btn-wsp" target="_blank"><i
+            class="fa fa-whatsapp"></i></a <!--Portada-->
     <div clase="portadaRes">
 
-        <h1 class="reTitle">RESERVA</h1>
+        <h1 data-aos="fade-up" data-aos-duration="3000" class="reTitle">RESERVA</h1>
 
-        <P class="p-res">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio
-            temporibus, tempore ullam ten nesciunt aliquam incidunt illum?</P>
+        <P data-aos="fade-up" data-aos-duration="3000"  class="p-res"> Para realizar una reserva en nuestro restaurante, ofrecemos la opción de hacerlo a través de
+            nuestro formulario de reserva en línea o mediante WhatsApp. De esta manera, aseguramos que nuestros clientes
+            puedan reservar su mesa de manera fácil y rápida, sin importar el método que prefieran. ¡Esperamos recibirte
+            pronto en Bodegón Balvanera!</P>
 
     </div>
 
     <div class="title-contac">
 
-        <h3 class="reservaTitle">FORMULARIO DE CONTACTO/RESERVA</h3>
-        <p class="p-res">Dejanos tu mensaje ,contestaremos a la brevedad</p>
+        <h3 data-aos="fade-up" data-aos-duration="3000"   class="reservaTitle">FORMULARIO DE CONTACTO/RESERVA</h3>
+        <p data-aos="fade-up" data-aos-duration="3000" class="p-res">Dejanos tu mensaje ,contestaremos a la brevedad</p>
 
     </div>
 
 
-    <section class="formOne">
+    <section data-aos="fade-up" data-aos-duration="3000" class="formOne">
         <form class="form" action="" method="POST">
 
             <input type="text" class="field" placeholder="Nombre"> <br>
@@ -117,28 +120,35 @@
         <div class="grup-1">
 
             <div class="box"></div>
-            <h2>Lorem ipsum dolor</h2>
-            <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, dolores harum magni.</P>
+            <h2 class="box-h2">BodegonBalvanera@gmail.com</h2>
+            <P class="box-p"><strong>Lavalle 850, Balvanera, Ciudad Autónoma deBuenos
+                    Aires,Argentina.</strong></P>
             <ul class="footer-icon">
                 <li> <a href=""><i class="fa fa-instagram"></i></a></li>
                 <li> <a href=""><i class="fa fa-whatsapp"></i></a></li>
                 <li> <a href=""><i class="fa fa-facebook"></i></a></li>
-                <li> <a href="#nav"><i class="fa fa-home"></i></a></li>
+                <li> <a href="../index.html"><i class="fa fa-home"></i></a></li>
             </ul>
 
         </div>
 
         <div class="grup-2">
 
-            <small>&copy;2022 <b>SyD</b> -Todos los drechos reservados </small>
+            <small class="small-2">&copy;2022 <b>SyD</b> -Todos los drechos reservados </small>
 
         </div>
+
     </footer>
+
     <!--Bootstrap--->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-        crossorigin="anonymous"></script>.
-
+        crossorigin="anonymous"></script>
+    <!--SCRIP AOS-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

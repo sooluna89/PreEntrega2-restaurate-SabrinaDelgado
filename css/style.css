@@ -6,6 +6,33 @@
 
 }
 
+/*boton whatsapp*/
+
+.btn-wsp {
+    position: fixed;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    bottom: 30px;
+    right: 30px;
+    background: #2ead38;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+    z-index: 100;
+}
+
+.btn-wsp:hover {
+    text-decoration: none;
+    color: #2ead38;
+    background: #fafafa;
+}
+
+
+
+/*nav*/
 .navbar-brand img {
     width: 170px;
     height: auto;
@@ -21,7 +48,7 @@
 .enlaces-b a {
     font-size: 25px;
     transition: background 300ms;
-    font-weight: 200px;
+
 }
 
 .enlaces-b a:hover {
@@ -29,7 +56,7 @@
 }
 
 .navbar-nav a {
-    font-weight: 580;
+
     color: #353535;
 }
 
@@ -65,16 +92,12 @@
 
 }
 
-
-
 @keyframes portada {
 
     0% {
 
         background-image: url(../assets/images/pastas-salsas-portada.jpg);
     }
-
-
 
 
     25% {
@@ -126,33 +149,31 @@
     height: auto;
     max-width: 100%;
     font-size: 60px;
-    margin-bottom: 0px;
-    padding: 0px;
+    margin-top: 30px;
     text-align: center;
     color: #fff;
     align-items: center;
     word-spacing: 17px;
     flex-direction: column;
-
+    font-weight: bold;
 }
 
-
-/*sub titulo*/
-.contenedor-portada h5 {
+/*logo ensima de portada*/
+.logo-transparente {
     display: flex;
-    max-width: 100%;
-    height: auto;
-    font-size: 30px;
-    margin-top: 30px;
-    padding: 60px;
-    color: #fff;
-    word-spacing: 5px;
+    width: 100%;
+    height: 68%;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: center;
+    justify-content: start;
 }
 
 
+.logo-fondo {
+    width: 60%;
+    flex-direction: column;
 
+}
 
 /*botones de todas las reservas solo estilo*/
 .reserva-b a {
@@ -163,7 +184,7 @@
     padding: 15px;
     border: 1px solid #fafafa;
     color: #fafafa;
-    margin: 0px;
+    margin: 20px;
     transition: background 300ms;
     cursor: pointer;
     border-radius: 10px;
@@ -199,6 +220,15 @@
         font-size: 55px;
     }
 
+    .logo-fondo {
+        width: 100%;
+    }
+
+    .logo-transparente {
+        width: 100%;
+        height: 45%;
+    }
+
 }
 
 
@@ -214,7 +244,7 @@
 }
 
 .titleOne {
-    font: size 3rem;
+    font-size: 1, 9rem;
     margin: 90px 0 10px 0;
     text-align: center;
     justify-content: center;
@@ -222,7 +252,7 @@
 }
 
 .p-one {
-    font-size: 25px;
+    font-size: 23px;
     margin: 50px;
 }
 
@@ -246,15 +276,15 @@
     width: 100%;
 }
 
-.titulo_reseña {
-    margin: 50px 0px;
-    padding: 10px 20px;
+.titulo_reseña h1 {
+    margin: 60px 30px 40px 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: 25px;
-    color: rgb(119, 115, 115);
+    font-size: 35px;
+    color: #787575;
+    font-weight: bold;
 }
 
 .testimonios_header h1 {
@@ -283,7 +313,7 @@
 
 .testimonios_caja {
     width: 500px;
-    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.10);
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.30);
     background-color: #fafafa;
     padding: 20px;
     margin: 15px 30px 30px 30px;
@@ -427,6 +457,7 @@ button:nth-child(5):hover~button {
     word-spacing: 17px;
     padding-bottom: 50px;
 }
+
 /* cards carta*/
 
 .cards-cosina {
@@ -434,7 +465,7 @@ button:nth-child(5):hover~button {
     flex-wrap: wrap;
     justify-content: center;
     margin: 0;
-    font-size: 22px;
+    font-size: 20px;
 }
 
 .cards {
@@ -443,7 +474,7 @@ button:nth-child(5):hover~button {
     justify-content: space-between;
     width: 520px;
     border: 0px solid rgb(244, 237, 237);
-    box-shadow: 2px 1px 4px 4px #f5eeeed1;
+    box-shadow: 2px 1px 4px 4px rgb(217, 206, 206);
     border-radius: 15px;
     font-family: sans-serif;
     margin: 20px;
@@ -469,8 +500,17 @@ button:nth-child(5):hover~button {
     text-align: center;
 }
 
+.card-body-card p {
+    padding: 20px;
+}
+
+.card-body-card ul li {
+    text-align: left;
+}
+
+
 .card-name {
-    background:#f30b0b ;
+    background: #f30b0b;
     border-radius: 0 0 10px 10px;
     padding: 20px;
     text-align: center;
@@ -500,398 +540,479 @@ button:nth-child(5):hover~button {
 
 }
 
+/* Nuestra cocina*/
+.sectionCarta {
+    text-align: center;
+    margin: 40px 40px 0 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cont_cosina {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.t-cosina {
+    font-size: 40px;
+    margin: 15px;
+    color: #787575;
+    font-weight: bold;
+}
 
 
-    /* Nuestra cocina*/
-    .sectionCarta {
-        text-align: center;
-        margin: 40px 40px 0 40px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
+.p-cosina {
+    text-align: center;
+    margin: 30px 0 40px 0;
+    font-size: 22px;
+}
 
-    .cont_cosina {
-        display: flex;
-        flex-direction: column;
+.img-chef {
+    display: flex;
+    object-fit: cover;
+    justify-content: center;
+    align-items: center;
+}
 
-    }
-
-    .h1-cosina {
-        font-size: 30px;
-        margin: 15px;
-    }
-
-
-    .p-cosina {
-        text-align: center;
-        margin: 30px;
-    }
-
-    .img-chef {
-        margin: 60px 0 20px 0;
+@media(max-width:900px) {
+    .img-chef img {
+        width: 100%;
+        margin-bottom: 0;
         object-fit: cover;
-
     }
 
-    @media(max-width:900px) {
-        .img-chef img {
-            width: 100%;
-            margin-bottom: 0;
-            object-fit: cover;
-        }
-
-        .image-card {
-            width: 20rem;
-            height: 30rem;
-        }
-
-        .title-port {
-            font-size: 45px;
-        }
-
+    .image-card {
+        width: 20rem;
+        height: 30rem;
     }
 
+    .title-port {
+        font-size: 45px;
+    }
 
-    /*especialidades*/
+}
 
-    /*portada*/
 
-    .parallax-2 {
-        background-image: url(../assets/images/especialidades-banner.jpg);
-        background-attachment: fixed;
-        background-position: 40%;
-        background-repeat: no-repeat;
-        background-size: cover;
+/*especialidades*/
+
+/*portada*/
+
+.parallax-2 {
+    background-image: url(../assets/images/especialidades-banner.jpg);
+    background-attachment: fixed;
+    background-position: 40%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 60rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 0 70px 0;
+    background-blend-mode: soft-light;
+    background-color: rgba(72, 68, 70, 0.705);
+
+}
+
+/*especialidades texto */
+
+.s-especialidades {
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 22px;
+    margin: 40px;
+    background: #fbf5f5;
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.30);
+    padding: 20px;
+}
+
+.s-especialidades h1 {
+    color: #898686;
+    margin-bottom: 30px;
+}
+
+/*booststrap carrusel*/
+
+
+.tituloSlaider {
+    font-size: 40px;
+
+}
+
+.parrafoSlaider {
+    font-size: 30px;
+}
+
+#carouselExampleCaptions {
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+/*delivery y servicios*/
+
+/*portada*/
+
+.parallax-3 {
+    background-image: url(../assets/images/delivery-banner.jpg);
+    background-attachment: fixed;
+    background-position: 29%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 60rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 0 70px 0;
+    background-blend-mode: soft-light;
+    background-color: rgba(106, 90, 96, 0.40);
+}
+
+/*texto y fotos*/
+.d-servicios {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-d {
+    text-align: center;
+    color: #787575;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.sub-titled {
+    text-align: center;
+    font-size: 30px;
+    margin: 10px;
+    color: #787575;
+    font-weight: bold;
+}
+
+.text-d {
+    text-align: center;
+    font-size: 22px;
+    margin: 20px;
+}
+
+.text-d li {
+    text-align: left;
+
+}
+
+.map {
+    justify-content: center;
+    align-items: center;
+    margin: 20px 8px;
+}
+
+/*acordeon bootstrap*/
+.acordeon {
+    width: 60%;
+    padding: 40px;
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+summary {
+    background: #f30b0b;
+    color: rgb(255, 252, 252);
+    padding: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.ulAcordeon li {
+    text-align: left;
+    padding: 15px;
+    background: white;
+    color: rgb(61, 61, 61);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.pAcordeon {
+    text-align: left;
+    font-weight: bold;
+    font-size: 30px;
+    color: #f30b0b;
+    padding-left: 60px;
+}
+
+.p-acodeon {
+    margin-top: 40px;
+}
+
+@media (max-width: 390px) {
+    .acordeon {
         width: 100%;
-        height: 60rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        margin: 0 0 70px 0;
-        background-blend-mode: soft-light;
-        background-color: rgba(91, 83, 86, 0.705);
-
     }
 
-    /*especialidades texto y fotos*/
-
-    .s-especialidades {
-        text-align: center;
-        justify-content: center;
-        flex-direction: column;
-        font-size: 25px;
-        margin: 40px;
-
-    }
-
-    /*booststrap carrusel*/
-
-
-    .tituloSlaider {
-        font-size: 50px;
-    }
-
-    .parrafoSlaider {
-        font-size: 30px;
-    }
-
-    #carouselExampleCaptions {
-        width: 80%;
-        margin: 0 auto;
-    }
-
-
-    /*delivery y servicios*/
-
-    /*portada*/
-
-    .parallax-3 {
-        background-image: url(../assets/images/delivery-banner.jpg);
-        background-attachment: fixed;
-        background-position: 29%;
-        background-repeat: no-repeat;
-        background-size: cover;
-        width: 100%;
-        height: 60rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        margin: 0 0 70px 0;
-        background-blend-mode: soft-light;
-        background-color: rgba(106, 90, 96, 0.40);
-    }
-
-    /*texto y fotos*/
-    .d-servicios {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .title-d {
-        text-align: center;
-
-    }
-
-    .sub-titled {
-        text-align: center;
-        font-size: 25px;
-        margin: 10px;
-
-    }
-
-    .text-d {
-        text-align: center;
-        font-size: 25px;
-        margin: 20px;
-    }
-
-    .map {
-        justify-content: center;
-        align-items: center;
-        margin: 20px 8px;
-    }
-
-    @media (max-width:490px) {
-        .map{
-            width:100% ;
-        }
-    }
-    /*nosotros*/
-    .parallax-4 {
-        background-image: url(../assets/images/nosotros-banner.jpg);
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        width: 100%;
-        height: 60rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        background-blend-mode: soft-light;
-        background-color: rgba(87, 81, 83, 0.705);
-    }
-
-
-    .nos-his {
-        display: flex;
-        width: 100%;
-        text-align: center;
-        justify-content: center;
-        flex-direction: column;
-        margin: 0 0 30px 0;
-    }
-
-    .his-cont {
-        background-color: #f30b0b;
-        padding: 10px;
-        color: #edf0f1;
-    }
-
-    .subtitle-nos {
-        text-align: center;
-        font-size: 30px;
-        margin: 10px;
-        padding: 20px;
-    }
-
-    .title-nos {
-        font-size: 40px;
-        margin: 40px 0 20px 0;
-    }
-
-    .p-nos {
-        font-size: 25px;
-        padding: 20px;
-    }
-
-    .direcion strong {
-
-        display: flex;
-        text-align: center;
-        font-size: 30px;
-        flex-direction: column;
-        margin: 10px;
-    }
-
-    /*reserva*/
-
-    .portadaRes {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }
-
-    .reTitle {
-        font-size: 50px;
-        text-align: center;
-        color: #f8f5f5;
-        margin-top: 70px;
-    }
-
-
-    .reservaTitle {
-        text-align: center;
-        font-size: 30px;
-        margin: 50px;
-        color: #faefef;
-    }
-
-    .p-res {
-        text-align: center;
-        font-size: 25px;
-        flex-direction: column;
-        margin: 30px;
-        color: #f8f2f2;
-    }
-
-
-    /* formulario*/
-    /*fondo formulario*/
-
-    .b-reserva {
-        background-image: url(../assets/images/fon-formulario.jpg);
-        background-size: 100vw 100vh;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
+    /*boton delivery*/
+    .btn-delivery {
         margin: 0;
-        background-blend-mode: soft-light;
-        background-color: rgba(223, 164, 129, 0.705);
+        right: 120px;
     }
 
-    .formOne {
-        margin: 30px;
-    }
+}
 
+/*nosotros*/
+.parallax-4 {
+    background-image: url(../assets/images/nosotros-banner.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 60rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-blend-mode: soft-light;
+    background-color: rgba(87, 81, 83, 0.705);
+}
+
+.nos-his {
+    display: flex;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0px 0px 30px 0px;
+    background: #fbf5f5;
+    box-shadow: 2px 2px 30px rgba(16, 15, 15, 0.3);
+
+}
+
+.his-cont {
+    background-color: #f30b0b;
+    padding: 10px;
+    color: #edf0f1;
+}
+
+.subtitle-nos {
+    text-align: center;
+    font-size: 30px;
+    margin: 10px;
+    padding: 20px;
+    color: #787575;
+    font-weight: bold;
+}
+
+.title-nos {
+    font-size: 40px;
+    margin: 40px 0 20px 0;
+}
+
+.p-nos {
+    font-size: 22px;
+    padding: 20px;
+}
+
+.direcion strong {
+
+    display: flex;
+    text-align: center;
+    font-size: 20px;
+    flex-direction: column;
+    margin: 10px;
+}
+
+/*reserva*/
+
+.portadaRes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.reTitle {
+    font-size: 50px;
+    text-align: center;
+    color: #030303;
+    margin-top: 70px;
+    font-weight: bold;
+}
+
+.reservaTitle {
+    text-align: center;
+    font-size: 30px;
+    margin: 50px;
+    color: #0b0a0a;
+    font-weight: bold;
+}
+
+.p-res {
+    text-align: center;
+    font-size: 25px;
+    flex-direction: column;
+    margin: 30px;
+    color: #141414;
+    font-weight: bold;
+}
+
+
+/* formulario*/
+/*fondo formulario*/
+
+.b-reserva {
+    background-image: url(../assets/images/fon-formulario.jpg);
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-blend-mode: soft-light;
+    background-color: rgba(239, 236, 234, 0.5);
+}
+
+.formOne {
+    margin: 30px;
+}
+
+form {
+    width: 450px;
+    margin: auto;
+    background: rgb(0, 0, 0, 0.4);
+    padding: 20px 20px 20px 20px;
+    margin-top: 20px;
+    border-radius: 7px;
+}
+
+
+input,
+textarea {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    font-size: 17px;
+
+
+}
+
+textarea {
+    min-height: 100px;
+    max-width: 100%;
+    max-height: 200px;
+}
+
+#boton {
+    background: #f6f2f3;
+    color: #141414;
+    padding: 17px;
+    transition: all 0.2s;
+    border-radius: 30PX;
+    transition: transform 0.2s;
+}
+
+#boton:hover {
+    background-color: #f30b0b;
+    color: rgb(11, 11, 11);
+    cursor: pointer;
+    transform: translateY(-3px);
+    transform: scale(1.1);
+}
+
+
+
+
+#boton:active {
+    transform: translateY(3px);
+}
+
+
+@media (max-width: 390px) {
     form {
-        width: 450px;
-        margin: auto;
-        background: rgb(0, 0, 0, 0.4);
-        padding: 20px 20px 20px 20px;
-        margin-top: 20px;
-        border-radius: 7px;
-    }
-
-
-    input,
-    textarea {
         width: 100%;
-        margin-bottom: 20px;
-        padding: 7px;
-        font-size: 17px;
-
-
-    }
-
-    textarea {
-        min-height: 100px;
-        max-width: 100%;
-        max-height: 200px;
-    }
-
-    #boton {
-        background: #f6f2f3;
-        color: #141414;
-        padding: 17px;
-        transition: all 0.2s;
-        border-radius: 30PX;
-        transition: transform 0.2s;
-    }
-
-    #boton:hover {
-        background-color: #f30b0b;
-        color: rgb(11, 11, 11);
-        cursor: pointer;
-        transform: translateY(-3px);
-        transform: scale(1.1);
     }
 
 
+}
 
 
-    #boton:active {
-        transform: translateY(3px);
-    }
+/* footer */
 
+.footer-icon i {
+    font-size: 30px;
+    color: #131313;
+}
 
-    @media (max-width: 390px) {
-        form {
-            width: 100%;
-        }
+.footer-icon i:hover {
+    color: #ede1e1;
+}
 
+.footer-page {
+    width: 100%;
+    background-color: #f30b0b;
+    margin-top: 30px;
 
-    }
+}
 
+.footer-page.grup-1 {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+}
 
-    /* footer */
+.footer-page.grup-1 .box {
+    width: 250px;
 
-    .footer-icon i {
-        font-size: 30px;
-        color: #131313;
-    }
+}
 
-    .footer-icon i:hover {
-        color: #ede1e1;
-    }
+.box-h2 {
+    padding: 20px 0 10px 9px;
+    font-size: 20px;
+    color: #fbf9f9;
+}
 
-    .footer-page {
-        width: 100%;
-        background-color: #f30b0b;
-        margin-top: 30px;
-    }
+.box-p {
+    margin: 10px 0 5px 9px;
+    font-size: 20px;
+    color: #100f0f;
+}
 
-    .footer-page.grup-1 {
-        width: 100%;
-        max-width: 1200px;
-        margin: auto;
-        display: grid;
-        grid-template-columns: repeat(3 1fr);
-        grid-gap: 50px;
-        padding: 45px 0px
-    }
+.footer-icon {
 
-    .footer-page.grup-1 .box {
-        width: 250px;
+    display: flex;
+    width: 40px;
+    height: 40px;
+    line-height: 45px;
+    text-align: center;
+    margin: 30px 20px;
+    line-height: 100%;
+    size: 9px;
+    list-style: none;
+    font-size: 1.1rem;
 
-    }
+}
 
-    .footer-page .grup-1 h2.box {
-        color: #e3d8d8;
-        margin-bottom: 25px;
-        font-size: 30px;
-    }
+.footer-icon li {
+    padding: 10px;
 
-    .footer-icon {
+}
 
-        display: flex;
-        width: 40px;
-        height: 40px;
-        line-height: 45px;
-        text-align: center;
-        margin: 30px 20px;
-        line-height: 100%;
-        size: 9px;
-        list-style: none;
-        font-size: 1.1rem;
+.footer-page .grup-2 {
+    background-color: rgb(21, 17, 8);
+    padding: 15px 10px;
+    text-align: center;
+    color: #f3eded;
 
-    }
+}
 
-
-    .footer-icon li {
-        padding: 10px;
-
-    }
-
-
-    .footer-page .grup-2 {
-        background-color: rgb(21, 17, 8);
-        padding: 15px 10px;
-        text-align: center;
-        color: #f3eded;
-
-    }
+.small-2 {
+    font-size: 15px;
+}
