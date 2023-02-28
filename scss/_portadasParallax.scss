@@ -1,9 +1,5 @@
-
-/*portada carta*/
-/*estilo para todos los titulos y botones de los parallax*/
-/*TITULOS DE TODOS LOS BANERS*/
-.parallax {
-	background-image: url(../assets/images/pastas-carta.jpg);
+/*mixin*/
+@mixin banner{
 	background-attachment: fixed;
 	background-position: 69%;
 	background-repeat: no-repeat;
@@ -15,6 +11,16 @@
 	justify-content: center;
 	margin: 0 0 70px 0;
 	background-blend-mode: soft-light;
+}
+
+
+/*portada carta*/
+/*estilo para todos los titulos y botones de los parallax*/
+/*TITULOS DE TODOS LOS BANERS*/
+/*carta*/
+.parallax {
+	background-image: url(../assets/images/pastas-carta.jpg);
+	@include banner;
 	background-color: $background-color_5;
 }
 .title-port {
@@ -33,17 +39,7 @@
 /*especialidades texto */
 .parallax-2 {
 	background-image: url(../assets/images/especialidades-banner.jpg);
-	background-attachment: fixed;
-	background-position: 40%;
-	background-repeat: no-repeat;
-	background-size: cover;
-	width: 100%;
-	height: 60rem;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	margin: 0 0 70px 0;
-	background-blend-mode: soft-light;
+    @include banner;
 	background-color: $background-color_6;
 }
 .s-especialidades {
@@ -66,17 +62,7 @@
 /*portada*/
 .parallax-3 {
 	background-image: url(../assets/images/delivery-banner.jpg);
-	background-attachment: fixed;
-	background-position: 29%;
-	background-repeat: no-repeat;
-	background-size: cover;
-	width: 100%;
-	height: 60rem;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	margin: 0 0 70px 0;
-	background-blend-mode: soft-light;
+	@include banner;
 	background-color: $background-color_5;
 }
 
@@ -84,15 +70,6 @@
 /*nosotros*/
 .parallax-4 {
 	background-image: url(../assets/images/nosotros-banner.jpg);
-	background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	width: 100%;
-	height: 60rem;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	background-blend-mode: soft-light;
+    @include banner;
 	background-color: $background-color_8;
 }

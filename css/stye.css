@@ -168,7 +168,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: rgba(94, 89, 91, 0.705);
+  background-color: #f30b0b;
   color: #fff;
 }
 
@@ -194,9 +194,11 @@
   object-fit: cover;
 }
 
+/*mixin*/
 /*portada carta*/
 /*estilo para todos los titulos y botones de los parallax*/
 /*TITULOS DE TODOS LOS BANERS*/
+/*carta*/
 .parallax {
   background-image: url(../assets/images/pastas-carta.jpg);
   background-attachment: fixed;
@@ -229,7 +231,7 @@
 .parallax-2 {
   background-image: url(../assets/images/especialidades-banner.jpg);
   background-attachment: fixed;
-  background-position: 40%;
+  background-position: 69%;
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
@@ -262,7 +264,7 @@
 .parallax-3 {
   background-image: url(../assets/images/delivery-banner.jpg);
   background-attachment: fixed;
-  background-position: 29%;
+  background-position: 69%;
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
@@ -279,7 +281,7 @@
 .parallax-4 {
   background-image: url(../assets/images/nosotros-banner.jpg);
   background-attachment: fixed;
-  background-position: center;
+  background-position: 69%;
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
@@ -287,6 +289,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin: 0 0 70px 0;
   background-blend-mode: soft-light;
   background-color: rgba(87, 81, 83, 0.705);
 }
@@ -722,7 +725,7 @@ button:nth-child(5):hover ~ button {
 }
 
 .his-cont {
-  background-color: rgba(94, 89, 91, 0.705);
+  background-color: #f30b0b;
   padding: 10px;
   color: #fff;
 }
@@ -780,7 +783,7 @@ button:nth-child(5):hover ~ button {
 
 .footer-page {
   width: 100%;
-  background: rgba(94, 89, 91, 0.705);
+  background: #f30b0b;
   margin-top: 30px;
 }
 .footer-page .grup-2 {
