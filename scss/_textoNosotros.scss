@@ -1,0 +1,42 @@
+
+
+.nos-his {
+	display: flex;
+	width: 100%;
+	text-align: center;
+	justify-content: center;
+	flex-direction: column;
+	margin: 0px 0px 30px 0px;
+	background: #fbf5f5;
+	box-shadow: 2px 2px 30px rgba(16, 15, 15, 0.3);
+}
+.his-cont {
+	background-color: $background-color_1;
+	padding: 10px;
+	color: $color_1;
+}
+.subtitle-nos {
+	text-align: center;
+	font-size: 30px;
+	margin: 10px;
+	padding: 20px;
+	color: $color_5;
+	font-weight: bold;
+}
+.title-nos {
+	font-size: 40px;
+	margin: 40px 0 20px 0;
+}
+.p-nos {
+	font-size: 22px;
+	padding: 20px;
+}
+.direcion {
+	strong {
+		display: flex;
+		text-align: center;
+		font-size: 20px;
+		flex-direction: column;
+		margin: 10px;
+	}
+}

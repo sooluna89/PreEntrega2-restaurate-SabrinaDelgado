@@ -1,0 +1,30 @@
+
+
+/*nav*/
+.navbar-brand {
+	img {
+		width: 170px;
+		height: auto;
+		cursor: pointer;
+		border-radius: 20px;
+		margin: 0 0 0 90px;
+	}
+}
+.color-encabezado {
+	background-color: $background-color_1;
+}
+.enlaces-b {
+	a {
+		font-size: 25px;
+		transition: background 300ms;
+		&:hover {
+			color: $color_3;
+		}
+	}
+}
+.navbar-nav {
+	a {
+		color: $color_4;
+	}
+}
+

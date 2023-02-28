@@ -1,0 +1,77 @@
+
+
+/*texto y fotos*/
+/*acordeon */
+.d-servicios {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.title-d {
+	text-align: center;
+	color: $color_9;
+	font-weight: bold;
+	font-size: 30px;
+}
+.sub-titled {
+	text-align: center;
+	font-size: 30px;
+	margin: 10px;
+	color: $color_9;
+	font-weight: bold;
+}
+.dire {
+	text-align: center;
+}
+.text-d {
+	text-align: center;
+	font-size: 22px;
+	margin: 20px;
+	li {
+		text-align: left;
+	}
+}
+.map {
+	width: 80%;
+	justify-content: center;
+	align-items: center;
+	margin: 20px 8px;
+}
+.acordeon {
+	width: 60%;
+	padding: 40px;
+	margin: auto;
+	margin-top: 20px;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+summary {
+	background: #f30b0b;
+	color: $color_11;
+	padding: 20px;
+	cursor: pointer;
+	font-weight: bold;
+	font-size: 20px;
+}
+.ulAcordeon {
+	li {
+		text-align: left;
+		padding: 15px;
+		background: white;
+		color: $color_12;
+		font-size: 20px;
+		font-weight: bold;
+	}
+}
+.pAcordeon {
+	text-align: left;
+	font-weight: bold;
+	font-size: 30px;
+	color: $color_13;
+	padding-left: 60px;
+}
+.p-acodeon {
+	margin-top: 40px;
+}

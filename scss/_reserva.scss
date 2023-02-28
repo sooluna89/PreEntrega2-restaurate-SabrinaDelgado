@@ -1,0 +1,94 @@
+/*reserva*/
+/* formulario*/
+/*fondo formulario*/
+.portadaRes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.reTitle {
+    font-size: 50px;
+    text-align: center;
+    color: $color_4;
+    margin-top: 70px;
+    font-weight: bold;
+}
+
+.reservaTitle {
+    text-align: center;
+    font-size: 25px;
+    margin: 50px;
+    color: $color_4;
+    font-weight: bold;
+}
+
+.p-res {
+    text-align: center;
+    font-size: 25px;
+    flex-direction: column;
+    margin: 30px;
+    color: $color_4;
+    font-weight: bold;
+}
+
+.b-reserva {
+    background-image: url(../assets/images/fon-formulario.jpg);
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-blend-mode: soft-light;
+    background-color: $background-color_1;
+}
+
+.formOne {
+    margin: 30px;
+}
+
+form {
+    width: 450px;
+    margin: auto;
+    background: rgb(0, 0, 0, 0.4);
+    padding: 20px 20px 20px 20px;
+    margin-top: 20px;
+    border-radius: 7px;
+}
+
+input {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    font-size: 17px;
+}
+
+textarea {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    font-size: 17px;
+    min-height: 100px;
+    max-width: 100%;
+    max-height: 200px;
+}
+
+#boton {
+    background: #f6f2f3;
+    color: $color_4;
+    padding: 17px;
+    transition: all 0.2s;
+    border-radius: 30PX;
+    transition: transform 0.2s;
+
+    &:hover {
+        background-color: $background-color_1;
+        color: $color_4;
+        cursor: pointer;
+        transform: translateY(-3px);
+        transform: scale(1.1);
+    }
+
+    &:active {
+        transform: translateY(3px);
+    }
+}

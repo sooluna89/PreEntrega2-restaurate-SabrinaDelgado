@@ -1,0 +1,30 @@
+
+
+/*contenido index*/
+/*Ricas comidas,ingredientes frescos*/
+.textIndexone {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background-color: $background-color_1;
+	color: $color_1;
+}
+.titleOne {
+	font-size: 50px;
+	margin: 90px 0 10px 0;
+	text-align: center;
+	justify-content: center;
+	flex-direction: column;
+}
+.p-one {
+	font-size: 23px;
+	margin: 50px;
+}
+.img-one {
+	display: inline;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width: 84, 3rem;
+	object-fit: cover;
+}

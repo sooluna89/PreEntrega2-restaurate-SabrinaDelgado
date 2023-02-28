@@ -1,0 +1,17 @@
+
+
+/*CENTRAR BOTONES RESERVA DE LOS BANNERS Y PORTADA*/
+.boton {
+	.reserva-b {
+		display: flex;
+		justify-content: center;
+	}
+}
+.reserva-b {
+	a {
+		&:hover {
+			background: white;
+			color: $color_4;
+		}
+	}
+}

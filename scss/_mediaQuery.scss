@@ -1,0 +1,65 @@
+/*MEDIA QUERY*/
+/*PORTADA IDEX*/
+@media (max-width:1024px) and (min-width:320px) {
+    .portada {
+        display: flex;
+        height: auto;
+        max-width: 1024px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+
+
+    }
+
+    .contenedor-portada h6 {
+        font-size: 43px;
+    }
+
+    .logo-fondo {
+        width: 100%;
+    }
+
+    .logo-transparente {
+        width: 100%;
+        height: 45%;
+    }
+
+}
+
+/*CARTA*/
+@media(max-width:900px) {
+    .img-chef img {
+        width: 100%;
+        margin-bottom: 0;
+        object-fit: cover;
+    }
+
+    .image-card {
+        width: 20rem;
+        height: 30rem;
+    }
+
+    .title-port {
+        font-size: 45px;
+    }
+
+}
+
+/*DELIVERY Y SEVICIOS*/
+@media (max-width: 390px) {
+    .acordeon {
+        width: 100%;
+    }
+
+
+}
+
+/*RESERVA*/
+@media (max-width: 390px) {
+    form {
+        width: 100%;
+    }
+
+
+}

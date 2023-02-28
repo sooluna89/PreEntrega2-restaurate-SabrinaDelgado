@@ -1,0 +1,98 @@
+
+/*portada carta*/
+/*estilo para todos los titulos y botones de los parallax*/
+/*TITULOS DE TODOS LOS BANERS*/
+.parallax {
+	background-image: url(../assets/images/pastas-carta.jpg);
+	background-attachment: fixed;
+	background-position: 69%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 60rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: 0 0 70px 0;
+	background-blend-mode: soft-light;
+	background-color: $background-color_5;
+}
+.title-port {
+	height: auto;
+	max-width: 100%;
+	font-size: 60px;
+	text-align: center;
+	color: $color_1;
+	word-spacing: 17px;
+	padding-bottom: 50px;
+}
+
+
+/*especialidades*/
+/*portada*/
+/*especialidades texto */
+.parallax-2 {
+	background-image: url(../assets/images/especialidades-banner.jpg);
+	background-attachment: fixed;
+	background-position: 40%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 60rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: 0 0 70px 0;
+	background-blend-mode: soft-light;
+	background-color: $background-color_6;
+}
+.s-especialidades {
+	text-align: center;
+	justify-content: center;
+	flex-direction: column;
+	font-size: 22px;
+	margin: 40px;
+	background: #fbf5f5;
+	box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.30);
+	padding: 20px;
+	h1 {
+		color: $color_9;
+		margin-bottom: 30px;
+	}
+}
+
+
+/*delivery y servicios*/
+/*portada*/
+.parallax-3 {
+	background-image: url(../assets/images/delivery-banner.jpg);
+	background-attachment: fixed;
+	background-position: 29%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 60rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: 0 0 70px 0;
+	background-blend-mode: soft-light;
+	background-color: $background-color_5;
+}
+
+
+/*nosotros*/
+.parallax-4 {
+	background-image: url(../assets/images/nosotros-banner.jpg);
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 60rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background-blend-mode: soft-light;
+	background-color: $background-color_8;
+}
