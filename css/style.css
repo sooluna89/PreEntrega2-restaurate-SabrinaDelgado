@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -167,7 +168,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: rgba(94, 89, 91, 0.705);
+  background-color: #f30b0b;
   color: #fff;
 }
 
@@ -193,6 +194,7 @@
   object-fit: cover;
 }
 
+/*MIXIN*/
 /*portada carta*/
 /*estilo para todos los titulos y botones de los parallax*/
 /*TITULOS DE TODOS LOS BANERS*/
@@ -272,6 +274,8 @@
   margin: 0 0 70px 0;
   background-blend-mode: soft-light;
   background-color: rgba(84, 81, 82, 0.4);
+  object-fit: cover;
+  object-position: left;
 }
 
 /*nosotros*/
@@ -286,8 +290,10 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin: 0 0 70px 0;
   background-blend-mode: soft-light;
   background-color: rgba(87, 81, 83, 0.705);
+  object-fit: scale-down;
 }
 
 /* cards carta*/
@@ -583,6 +589,132 @@ textarea {
   transform: translateY(3px);
 }
 
+/*reseña clientes*/
+/*estrellas reseña*/
+.testimonios {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.titulo_reseña h1 {
+  margin: 60px 30px 40px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 35px;
+  color: #979797;
+  font-weight: bold;
+}
+
+.testimonios_header h1 {
+  font-size: 2.9rem;
+  font-weight: 500;
+  background-color: #9b9494;
+  color: #fafafa;
+  padding: 10px 20px;
+}
+
+.testimonio_header span {
+  font-size: 2.2rem;
+  color: #252525;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+}
+
+.testimonios_contenedor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.testimonios_caja {
+  width: 500px;
+  box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.3);
+  background-color: #fafafa;
+  padding: 20px;
+  margin: 15px 30px 30px 30px;
+}
+
+.perfil-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 30px;
+}
+.perfil-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.perfil {
+  display: flex;
+  align-items: center;
+}
+
+.name-user {
+  display: flex;
+  flex-direction: column;
+}
+.name-user strong {
+  color: #5f5050;
+  font-size: 1, 3rem;
+}
+.name-user span {
+  color: #979797;
+}
+
+.caja-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+:root {
+  --color-hover: #ffa400;
+}
+
+.valoracion {
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+}
+.valoracion button {
+  background-color: #fafafa;
+  border: 0;
+  color: rgb(246, 223, 15);
+  transition: 1s all;
+}
+.valoracion button:hover {
+  cursor: pointer;
+  transform: rotate(360deg);
+}
+
+button:nth-child(1):hover ~ button {
+  transform: rotate(360deg);
+}
+button:nth-child(2):hover ~ button {
+  transform: rotate(360deg);
+}
+button:nth-child(3):hover ~ button {
+  transform: rotate(360deg);
+}
+button:nth-child(4):hover ~ button {
+  transform: rotate(360deg);
+}
+button:nth-child(5):hover ~ button {
+  transform: rotate(360deg);
+}
+
 .nos-his {
   display: flex;
   width: 100%;
@@ -595,7 +727,7 @@ textarea {
 }
 
 .his-cont {
-  background-color: rgba(94, 89, 91, 0.705);
+  background-color: #f30b0b;
   padding: 10px;
   color: #fff;
 }
@@ -653,7 +785,7 @@ textarea {
 
 .footer-page {
   width: 100%;
-  background-color: rgba(94, 89, 91, 0.705);
+  background: #f30b0b;
   margin-top: 30px;
 }
 .footer-page .grup-2 {

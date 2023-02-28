@@ -1,7 +1,5 @@
-/*mixin*/
+/*MIXIN*/
 @mixin banner{
-	background-attachment: fixed;
-	background-position: 69%;
 	background-repeat: no-repeat;
 	background-size: cover;
 	width: 100%;
@@ -13,13 +11,13 @@
 	background-blend-mode: soft-light;
 }
 
-
 /*portada carta*/
 /*estilo para todos los titulos y botones de los parallax*/
 /*TITULOS DE TODOS LOS BANERS*/
-/*carta*/
 .parallax {
 	background-image: url(../assets/images/pastas-carta.jpg);
+	background-attachment: fixed;
+	background-position: 69%;
 	@include banner;
 	background-color: $background-color_5;
 }
@@ -39,7 +37,9 @@
 /*especialidades texto */
 .parallax-2 {
 	background-image: url(../assets/images/especialidades-banner.jpg);
-    @include banner;
+	background-attachment: fixed;
+	background-position: 40%;
+	@include banner;
 	background-color: $background-color_6;
 }
 .s-especialidades {
@@ -62,14 +62,21 @@
 /*portada*/
 .parallax-3 {
 	background-image: url(../assets/images/delivery-banner.jpg);
-	@include banner;
+	background-attachment: fixed;
+	background-position: 29%;
+    @include banner;
 	background-color: $background-color_5;
+    object-fit: cover;
+    object-position:left ;
 }
 
 
 /*nosotros*/
 .parallax-4 {
 	background-image: url(../assets/images/nosotros-banner.jpg);
-    @include banner;
+	background-attachment: fixed;
+	background-position: center;
+	@include banner;
 	background-color: $background-color_8;
+    object-fit:scale-down;
 }
