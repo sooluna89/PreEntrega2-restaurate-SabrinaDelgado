@@ -1,18 +1,872 @@
-/* Error: Top-level selectors may not contain the parent selector "&".
- *    ,
- * 89 | &:root {
- *    | ^^^^^^^
- *    '
- *   scss\_reseñaClientes.scss 89:1  @import
- *   scss\style.scss 8:9             root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: 'Error: Top-level selectors may not contain the parent selector "&".\a    \2577 \a 89 \2502  &:root {\d\a    \2502  ^^^^^^^\a    \2575 \a   scss\\_reseñaClientes.scss 89:1  @import\a   scss\\style.scss 8:9             root stylesheet';
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Merriweather Sans", sans-serif;
 }
+
+/*boton whatsapp*/
+.btn-wsp {
+  position: fixed;
+  width: 55px;
+  height: 55px;
+  line-height: 55px;
+  bottom: 30px;
+  right: 30px;
+  background: #2ead38;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+  z-index: 100;
+}
+.btn-wsp:hover {
+  text-decoration: none;
+  color: #2ead38;
+  background: #fafafa;
+}
+
+/*nav*/
+.navbar-brand img {
+  width: 170px;
+  height: auto;
+  cursor: pointer;
+  border-radius: 20px;
+  margin: 0 0 0 90px;
+}
+
+.color-encabezado {
+  background-color: #f30b0b;
+}
+
+.enlaces-b a {
+  font-size: 25px;
+  transition: background 300ms;
+}
+.enlaces-b a:hover {
+  color: #edf0f1;
+}
+
+.navbar-nav a {
+  color: black;
+}
+
+/*portada index*/
+@keyframes portada {
+  0% {
+    background-image: url(../assets/images/pastas-salsas-portada.jpg);
+  }
+  25% {
+    background-image: url(../assets/images/pastas-salsas-portada.jpg);
+  }
+  26% {
+    background-image: url(../assets/images/lomo-batatas-portada.jpg);
+  }
+  50% {
+    background-image: url(../assets/images/lomo-batatas-portada.jpg);
+  }
+  51% {
+    background-image: url(../assets/images/lomo-batatas-portada.jpg);
+  }
+  75% {
+    background-image: url(../assets/images/estofado-portada.jpg);
+  }
+  100% {
+    background-image: url(../assets/images/estofado-portada.jpg);
+  }
+}
+/*titulos  portada index*/
+/*logo ensima de portada*/
+/*botones de todas las reservas solo estilo*/
+.portada-b {
+  display: flex;
+  max-width: 100%;
+  height: 1024px;
+  box-sizing: border-box;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: all 0.1s ease-in-out;
+  margin: 0px;
+  animation: portada 17s infinite linear;
+  background-blend-mode: soft-light;
+  background-color: rgba(94, 89, 91, 0.705);
+  box-shadow: 0px 0px 30px 0px rgb(83, 82, 82);
+  background-attachment: fixed;
+}
+
+.contenedor-portada {
+  width: 100%;
+  height: auto;
+  margin: 0px;
+  padding: 0px;
+  align-content: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.contenedor-portada h6 {
+  height: auto;
+  max-width: 100%;
+  font-size: 60px;
+  margin-top: 30px;
+  text-align: center;
+  color: #fff;
+  align-items: center;
+  word-spacing: 17px;
+  flex-direction: column;
+  font-weight: bold;
+}
+
+.logo-transparente {
+  display: flex;
+  width: 100%;
+  height: 68%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+}
+
+.logo-fondo {
+  width: 60%;
+  flex-direction: column;
+}
+
+.reserva-b a {
+  width: auto;
+  height: 100%;
+  background: none;
+  font-size: 40px;
+  padding: 15px;
+  border: 1px solid #fafafa;
+  color: #fff;
+  margin: 20px;
+  transition: background 300ms;
+  cursor: pointer;
+  border-radius: 10px;
+  align-items: flex-end;
+  text-decoration: none;
+}
+
+/*CENTRAR BOTONES RESERVA DE LOS BANNERS Y PORTADA*/
+.boton .reserva-b {
+  display: flex;
+  justify-content: center;
+}
+
+.reserva-b a:hover {
+  background: white;
+  color: black;
+}
+
+/*contenido index*/
+/*Ricas comidas,ingredientes frescos*/
+.textIndexone {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgba(94, 89, 91, 0.705);
+  color: #fff;
+}
+
+.titleOne {
+  font-size: 50px;
+  margin: 90px 0 10px 0;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.p-one {
+  font-size: 23px;
+  margin: 50px;
+}
+
+.img-one {
+  display: inline;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 84, 3rem;
+  object-fit: cover;
+}
+
+/*portada carta*/
+/*estilo para todos los titulos y botones de los parallax*/
+/*TITULOS DE TODOS LOS BANERS*/
+.parallax {
+  background-image: url(../assets/images/pastas-carta.jpg);
+  background-attachment: fixed;
+  background-position: 69%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 60rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 0 70px 0;
+  background-blend-mode: soft-light;
+  background-color: rgba(84, 81, 82, 0.4);
+}
+
+.title-port {
+  height: auto;
+  max-width: 100%;
+  font-size: 60px;
+  text-align: center;
+  color: #fff;
+  word-spacing: 17px;
+  padding-bottom: 50px;
+}
+
+/*especialidades*/
+/*portada*/
+/*especialidades texto */
+.parallax-2 {
+  background-image: url(../assets/images/especialidades-banner.jpg);
+  background-attachment: fixed;
+  background-position: 40%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 60rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 0 70px 0;
+  background-blend-mode: soft-light;
+  background-color: rgba(72, 68, 70, 0.705);
+}
+
+.s-especialidades {
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 22px;
+  margin: 40px;
+  background: #fbf5f5;
+  box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+}
+.s-especialidades h1 {
+  color: #979797;
+  margin-bottom: 30px;
+}
+
+/*delivery y servicios*/
+/*portada*/
+.parallax-3 {
+  background-image: url(../assets/images/delivery-banner.jpg);
+  background-attachment: fixed;
+  background-position: 29%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 60rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 0 70px 0;
+  background-blend-mode: soft-light;
+  background-color: rgba(84, 81, 82, 0.4);
+}
+
+/*nosotros*/
+.parallax-4 {
+  background-image: url(../assets/images/nosotros-banner.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 60rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-blend-mode: soft-light;
+  background-color: rgba(87, 81, 83, 0.705);
+}
+
+/* cards carta*/
+/* Nuestra cocina*/
+.cards-cosina {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0;
+  font-size: 20px;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 520px;
+  border: 0px solid rgb(244, 237, 237);
+  box-shadow: 2px 1px 4px 4px rgb(217, 206, 206);
+  border-radius: 15px;
+  font-family: sans-serif;
+  margin: 20px;
+  transition: all 400ms ease;
+  justify-content: center;
+  cursor: default;
+}
+.cards:hover {
+  transform: translateY(-3%);
+}
+
+.title {
+  font-size: 24px;
+  padding: 10px 10px 0 10px;
+  text-align: center;
+}
+
+.card-body-card {
+  padding: 10px;
+  text-align: center;
+}
+.card-body-card p {
+  padding: 20px;
+}
+.card-body-card ul li {
+  text-align: left;
+}
+.card-body-card .image-card {
+  margin: 10px;
+  object-fit: cover;
+}
+
+.card-name {
+  background: #f30b0b;
+  border-radius: 0 0 10px 10px;
+  padding: 20px;
+  text-align: center;
+}
+.card-name p {
+  text-decoration: none;
+  color: #fafafa;
+}
+.card-name p::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.sectionCarta {
+  text-align: center;
+  margin: 40px 40px 0 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cont_cosina {
+  display: flex;
+  flex-direction: column;
+}
+
+.t-cosina {
+  font-size: 40px;
+  margin: 15px;
+  color: #787575;
+  font-weight: bold;
+}
+
+.p-cosina {
+  text-align: center;
+  margin: 30px 0 40px 0;
+  font-size: 22px;
+}
+
+.img-chef {
+  display: flex;
+  object-fit: cover;
+  justify-content: center;
+  align-items: center;
+}
+
+/*booststrap carrusel*/
+.tituloSlaider {
+  font-size: 40px;
+}
+
+.parrafoSlaider {
+  font-size: 30px;
+}
+
+#carouselExampleCaptions {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/*texto y fotos*/
+/*acordeon */
+.d-servicios {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title-d {
+  text-align: center;
+  color: #979797;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.sub-titled {
+  text-align: center;
+  font-size: 30px;
+  margin: 10px;
+  color: #979797;
+  font-weight: bold;
+}
+
+.dire {
+  text-align: center;
+}
+
+.text-d {
+  text-align: center;
+  font-size: 22px;
+  margin: 20px;
+}
+.text-d li {
+  text-align: left;
+}
+
+.map {
+  width: 80%;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 8px;
+}
+
+.acordeon {
+  width: 60%;
+  padding: 40px;
+  margin: auto;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+summary {
+  background: #f30b0b;
+  color: rgb(255, 252, 252);
+  padding: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.ulAcordeon li {
+  text-align: left;
+  padding: 15px;
+  background: white;
+  color: rgb(61, 61, 61);
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.pAcordeon {
+  text-align: left;
+  font-weight: bold;
+  font-size: 30px;
+  color: #f30b0b;
+  padding-left: 60px;
+}
+
+.p-acodeon {
+  margin-top: 40px;
+}
+
+/*reserva*/
+/* formulario*/
+/*fondo formulario*/
+.portadaRes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.reTitle {
+  font-size: 50px;
+  text-align: center;
+  color: black;
+  margin-top: 70px;
+  font-weight: bold;
+}
+
+.reservaTitle {
+  text-align: center;
+  font-size: 25px;
+  margin: 50px;
+  color: black;
+  font-weight: bold;
+}
+
+.p-res {
+  text-align: center;
+  font-size: 25px;
+  flex-direction: column;
+  margin: 30px;
+  color: black;
+  font-weight: bold;
+}
+
+.b-reserva {
+  background-image: url(../assets/images/fon-formulario.jpg);
+  background-size: 100vw 100vh;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-blend-mode: soft-light;
+  background-color: rgba(94, 89, 91, 0.705);
+}
+
+.formOne {
+  margin: 30px;
+}
+
+form {
+  width: 450px;
+  margin: auto;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 20px 20px 20px 20px;
+  margin-top: 20px;
+  border-radius: 7px;
+}
+
+input {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 7px;
+  font-size: 17px;
+}
+
+textarea {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 7px;
+  font-size: 17px;
+  min-height: 100px;
+  max-width: 100%;
+  max-height: 200px;
+}
+
+#boton {
+  background: #f6f2f3;
+  color: black;
+  padding: 17px;
+  transition: all 0.2s;
+  border-radius: 30PX;
+  transition: transform 0.2s;
+}
+#boton:hover {
+  background-color: rgba(94, 89, 91, 0.705);
+  color: black;
+  cursor: pointer;
+  transform: translateY(-3px);
+  transform: scale(1.1);
+}
+#boton:active {
+  transform: translateY(3px);
+}
+
+/*reseña clientes*/
+/*estrellas reseña*/
+.testimonios {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.titulo_reseña h1 {
+  margin: 60px 30px 40px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 35px;
+  color: #979797;
+  font-weight: bold;
+}
+
+.testimonios_header h1 {
+  font-size: 2.9rem;
+  font-weight: 500;
+  background-color: #9b9494;
+  color: #fafafa;
+  padding: 10px 20px;
+}
+
+.testimonio_header span {
+  font-size: 2.2rem;
+  color: #252525;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+}
+
+.testimonios_contenedor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.testimonios_caja {
+  width: 500px;
+  box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.3);
+  background-color: #fafafa;
+  padding: 20px;
+  margin: 15px 30px 30px 30px;
+}
+
+.perfil-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 30px;
+}
+.perfil-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.perfil {
+  display: flex;
+  align-items: center;
+}
+
+.name-user {
+  display: flex;
+  flex-direction: column;
+}
+.name-user strong {
+  color: #5f5050;
+  font-size: 1, 3rem;
+}
+.name-user span {
+  color: #979797;
+}
+
+.caja-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+:root {
+  --color-hover: #ffa400;
+}
+
+.valoracion {
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+}
+.valoracion button {
+  background-color: #fafafa;
+  border: 0;
+  color: rgb(246, 223, 15);
+  transition: 1s all;
+}
+.valoracion button:hover {
+  cursor: pointer;
+  transform: rotate(360deg);
+}
+
+button:nth-child(1):hover ~ button {
+  transform: rotate(360deg);
+}
+button:nth-child(2):hover ~ button {
+  transform: rotate(360deg);
+}
+button:nth-child(3):hover ~ button {
+  transform: rotate(360deg);
+}
+button:nth-child(4):hover ~ button {
+  transform: rotate(360deg);
+}
+button:nth-child(5):hover ~ button {
+  transform: rotate(360deg);
+}
+
+.nos-his {
+  display: flex;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0px 0px 30px 0px;
+  background: #fbf5f5;
+  box-shadow: 2px 2px 30px rgba(16, 15, 15, 0.3);
+}
+
+.his-cont {
+  background-color: rgba(94, 89, 91, 0.705);
+  padding: 10px;
+  color: #fff;
+}
+
+.subtitle-nos {
+  text-align: center;
+  font-size: 30px;
+  margin: 10px;
+  padding: 20px;
+  color: #787575;
+  font-weight: bold;
+}
+
+.title-nos {
+  font-size: 40px;
+  margin: 40px 0 20px 0;
+}
+
+.p-nos {
+  font-size: 22px;
+  padding: 20px;
+}
+
+.direcion strong {
+  display: flex;
+  text-align: center;
+  font-size: 20px;
+  flex-direction: column;
+  margin: 10px;
+}
+
+/* footer */
+.footer-icon {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  line-height: 45px;
+  text-align: center;
+  margin: 30px 20px;
+  line-height: 100%;
+  size: 9px;
+  list-style: none;
+  font-size: 1.1rem;
+}
+.footer-icon i {
+  font-size: 30px;
+  color: black;
+}
+.footer-icon i:hover {
+  color: #fafafa;
+}
+.footer-icon li {
+  padding: 10px;
+}
+
+.footer-page {
+  width: 100%;
+  background: rgba(94, 89, 91, 0.705);
+  margin-top: 30px;
+}
+.footer-page .grup-2 {
+  background-color: rgb(21, 17, 8);
+  padding: 15px 10px;
+  text-align: center;
+  color: #fff;
+}
+
+.footer-page.grup-1 {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3 1fr);
+  grid-gap: 50px;
+  padding: 45px 0px;
+}
+.footer-page.grup-1 .box {
+  width: 250px;
+}
+
+.box-h2 {
+  padding: 20px 0 10px 9px;
+  font-size: 20px;
+  color: #fafafa;
+}
+
+.box-p {
+  margin: 10px 0 5px 9px;
+  font-size: 20px;
+  color: black;
+}
+
+.small-2 {
+  font-size: 15px;
+}
+
+/*MEDIA QUERY*/
+/*PORTADA IDEX*/
+@media (max-width: 1024px) and (min-width: 320px) {
+  .portada {
+    display: flex;
+    height: auto;
+    max-width: 1024px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .contenedor-portada h6 {
+    font-size: 43px;
+  }
+  .logo-fondo {
+    width: 100%;
+  }
+  .logo-transparente {
+    width: 100%;
+    height: 45%;
+  }
+}
+/*CARTA*/
+@media (max-width: 900px) {
+  .img-chef img {
+    width: 100%;
+    margin-bottom: 0;
+    object-fit: cover;
+  }
+  .image-card {
+    width: 20rem;
+    height: 30rem;
+  }
+  .title-port {
+    font-size: 45px;
+  }
+}
+/*DELIVERY Y SEVICIOS*/
+@media (max-width: 390px) {
+  .acordeon {
+    width: 100%;
+  }
+}
+/*RESERVA*/
+@media (max-width: 390px) {
+  form {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=stye.css.map */
