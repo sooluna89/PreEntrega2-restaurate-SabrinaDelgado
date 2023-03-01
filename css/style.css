@@ -194,6 +194,132 @@
   object-fit: cover;
 }
 
+/*reseña clientes*/
+/*estrellas reseña*/
+.testimonios {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.titulo_reseña h1 {
+  margin: 60px 30px 40px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 35px;
+  color: #979797;
+  font-weight: bold;
+}
+
+.testimonios_header h1 {
+  font-size: 2.9rem;
+  font-weight: 500;
+  background-color: #9b9494;
+  color: #fafafa;
+  padding: 10px 20px;
+}
+
+.testimonio_header span {
+  font-size: 2.2rem;
+  color: #252525;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+}
+
+.testimonios_contenedor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.testimonios_caja {
+  width: 500px;
+  box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.3);
+  background-color: #fafafa;
+  padding: 20px;
+  margin: 15px 30px 30px 30px;
+}
+
+.perfil-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 30px;
+}
+.perfil-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.perfil {
+  display: flex;
+  align-items: center;
+}
+
+.name-user {
+  display: flex;
+  flex-direction: column;
+}
+.name-user strong {
+  color: #5f5050;
+  font-size: 1, 3rem;
+}
+.name-user span {
+  color: #979797;
+}
+
+.caja-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+:root {
+  --color-hover: #ffa400;
+}
+
+.valoracion {
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+}
+.valoracion button {
+  background-color: #fafafa;
+  border: 0;
+  color: rgb(246, 223, 15);
+  transition: 1s all;
+}
+.valoracion button:hover {
+  cursor: pointer;
+  transform: rotate(360deg);
+}
+
+button:nth-child(1):hover ~ button {
+  transform: rotate(360deg);
+}
+button:nth-child(2):hover ~ button {
+  transform: rotate(360deg);
+}
+button:nth-child(3):hover ~ button {
+  transform: rotate(360deg);
+}
+button:nth-child(4):hover ~ button {
+  transform: rotate(360deg);
+}
+button:nth-child(5):hover ~ button {
+  transform: rotate(360deg);
+}
+
 /*MIXIN*/
 /*portada carta*/
 /*estilo para todos los titulos y botones de los parallax*/
@@ -549,14 +675,18 @@ form {
   width: 70%;
   margin: auto;
   background: rgba(0, 0, 0, 0.4);
-  padding: 20px 20px 20px 20px;
+  padding: 20px;
   margin-top: 20px;
   border-radius: 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 input {
   width: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
   padding: 7px;
   font-size: 17px;
 }
@@ -572,6 +702,7 @@ textarea {
 }
 
 #boton {
+  width: 40%;
   background: #f6f2f3;
   color: black;
   padding: 17px;
@@ -588,132 +719,6 @@ textarea {
 }
 #boton:active {
   transform: translateY(3px);
-}
-
-/*reseña clientes*/
-/*estrellas reseña*/
-.testimonios {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  width: 100%;
-}
-
-.titulo_reseña h1 {
-  margin: 60px 30px 40px 50px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  font-size: 35px;
-  color: #979797;
-  font-weight: bold;
-}
-
-.testimonios_header h1 {
-  font-size: 2.9rem;
-  font-weight: 500;
-  background-color: #9b9494;
-  color: #fafafa;
-  padding: 10px 20px;
-}
-
-.testimonio_header span {
-  font-size: 2.2rem;
-  color: #252525;
-  margin-bottom: 25px;
-  text-transform: uppercase;
-}
-
-.testimonios_contenedor {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  width: 100%;
-}
-
-.testimonios_caja {
-  width: 500px;
-  box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.3);
-  background-color: #fafafa;
-  padding: 20px;
-  margin: 15px 30px 30px 30px;
-}
-
-.perfil-img {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  overflow: hidden;
-  margin-right: 30px;
-}
-.perfil-img img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.perfil {
-  display: flex;
-  align-items: center;
-}
-
-.name-user {
-  display: flex;
-  flex-direction: column;
-}
-.name-user strong {
-  color: #5f5050;
-  font-size: 1, 3rem;
-}
-.name-user span {
-  color: #979797;
-}
-
-.caja-top {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 20px;
-  width: 100%;
-}
-
-:root {
-  --color-hover: #ffa400;
-}
-
-.valoracion {
-  display: flex;
-  justify-content: center;
-  margin-top: 5px;
-}
-.valoracion button {
-  background-color: #fafafa;
-  border: 0;
-  color: rgb(246, 223, 15);
-  transition: 1s all;
-}
-.valoracion button:hover {
-  cursor: pointer;
-  transform: rotate(360deg);
-}
-
-button:nth-child(1):hover ~ button {
-  transform: rotate(360deg);
-}
-button:nth-child(2):hover ~ button {
-  transform: rotate(360deg);
-}
-button:nth-child(3):hover ~ button {
-  transform: rotate(360deg);
-}
-button:nth-child(4):hover ~ button {
-  transform: rotate(360deg);
-}
-button:nth-child(5):hover ~ button {
-  transform: rotate(360deg);
 }
 
 .nos-his {
@@ -869,7 +874,7 @@ button:nth-child(5):hover ~ button {
   }
 }
 /*RESERVA*/
-@media (min-width: 390px) and (max-width: 1023px) {
+@media (min-width: 360px) and (max-width: 1023px) {
   form {
     width: 100%;
   }
