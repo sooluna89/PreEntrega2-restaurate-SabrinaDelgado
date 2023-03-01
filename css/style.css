@@ -534,6 +534,7 @@ summary {
 .b-reserva {
   background-image: url(../assets/images/fon-formulario.jpg);
   background-size: 100vw 100vh;
+  object-fit: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-blend-mode: soft-light;
@@ -579,7 +580,7 @@ textarea {
   transition: transform 0.2s;
 }
 #boton:hover {
-  background-color: rgba(94, 89, 91, 0.705);
+  background-color: #f30b0b;
   color: black;
   cursor: pointer;
   transform: translateY(-3px);
@@ -871,6 +872,9 @@ button:nth-child(5):hover ~ button {
 @media (max-width: 390px) {
   form {
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 

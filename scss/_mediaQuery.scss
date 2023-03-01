@@ -59,6 +59,9 @@
 @media (max-width: 390px) {
     form {
         width: 100%;
+        display:flex;
+        justify-content: center;
+        align-items: center;
     }
 
 
