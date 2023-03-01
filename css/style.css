@@ -509,7 +509,7 @@ summary {
 .reTitle {
   font-size: 50px;
   text-align: center;
-  color: black;
+  color: #fafafa;
   margin-top: 70px;
   font-weight: bold;
 }
@@ -518,7 +518,7 @@ summary {
   text-align: center;
   font-size: 25px;
   margin: 50px;
-  color: black;
+  color: #fafafa;
   font-weight: bold;
 }
 
@@ -527,7 +527,7 @@ summary {
   font-size: 25px;
   flex-direction: column;
   margin: 30px;
-  color: black;
+  color: #fafafa;
   font-weight: bold;
 }
 
@@ -546,7 +546,7 @@ summary {
 }
 
 form {
-  width: 450px;
+  width: 65%;
   margin: auto;
   background: rgba(0, 0, 0, 0.4);
   padding: 20px 20px 20px 20px;
@@ -869,12 +869,9 @@ button:nth-child(5):hover ~ button {
   }
 }
 /*RESERVA*/
-@media (max-width: 390px) {
+@media (min-width: 390px) and (max-width: 1023px) {
   form {
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
 }
 

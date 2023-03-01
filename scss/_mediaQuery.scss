@@ -56,12 +56,10 @@
 }
 
 /*RESERVA*/
-@media (max-width: 390px) {
+@media (min-width: 390px) and (max-width:1023px) {
     form {
-        width: 100%;
-        display:flex;
-        justify-content: center;
-        align-items: center;
+        width:100%;
+        
     }
 
 

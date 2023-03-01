@@ -11,7 +11,7 @@
 .reTitle {
     font-size: 50px;
     text-align: center;
-    color: $color_4;
+    color: $color_6;
     margin-top: 70px;
     font-weight: bold;
 }
@@ -20,7 +20,7 @@
     text-align: center;
     font-size: 25px;
     margin: 50px;
-    color: $color_4;
+    color: $color_6;
     font-weight: bold;
 }
 
@@ -29,7 +29,7 @@
     font-size: 25px;
     flex-direction: column;
     margin: 30px;
-    color: $color_4;
+    color: $color_6;
     font-weight: bold;
 }
 
@@ -48,7 +48,7 @@
 }
 
 form {
-    width: 450px;
+    width:65% ;
     margin: auto;
     background: rgb(0, 0, 0, 0.4);
     padding: 20px 20px 20px 20px;
