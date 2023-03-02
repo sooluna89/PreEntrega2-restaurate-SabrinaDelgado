@@ -702,7 +702,7 @@ textarea {
 }
 
 #boton {
-  width: 40%;
+  width: 50%;
   background: #f6f2f3;
   color: black;
   padding: 17px;
@@ -874,8 +874,11 @@ textarea {
   }
 }
 /*RESERVA*/
-@media (min-width: 360px) and (max-width: 1023px) {
+@media (min-width: 370px) and (max-width: 1023px) {
   form {
+    width: 100%;
+  }
+  #boton {
     width: 100%;
   }
 }

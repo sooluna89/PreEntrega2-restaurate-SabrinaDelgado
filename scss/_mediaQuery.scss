@@ -56,11 +56,15 @@
 }
 
 /*RESERVA*/
-@media (min-width: 360px) and (max-width:1023px) {
+@media (min-width: 370px) and (max-width:1023px) {
     form {
-        width:100%;
-        
+        width: 100%;
+
     }
 
+    #boton {
+        width:100% ;
+        
+    }
 
 }
