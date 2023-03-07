@@ -379,6 +379,7 @@ button:nth-child(5):hover ~ button {
   padding: 20px;
 }
 .s-especialidades h1 {
+  text-align: center;
   color: #979797;
   margin-bottom: 30px;
 }

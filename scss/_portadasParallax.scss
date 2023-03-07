@@ -44,7 +44,7 @@
     margin: 0 0 70px 0;
 }
 .s-especialidades {
-	text-align:left;
+	text-align: left;
 	justify-content: center;
 	flex-direction: column;
 	font-size: 22px;
@@ -53,6 +53,7 @@
 	box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.30);
 	padding: 20px;
 	h1 {
+		text-align: center;
 		color: $color_9;
 		margin-bottom: 30px;
 	}
