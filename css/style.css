@@ -335,7 +335,6 @@ button:nth-child(5):hover ~ button {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 0 0 70px 0;
   background-blend-mode: soft-light;
   background-color: rgba(84, 81, 82, 0.4);
 }
@@ -364,13 +363,13 @@ button:nth-child(5):hover ~ button {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 0 0 70px 0;
   background-blend-mode: soft-light;
   background-color: rgba(72, 68, 70, 0.705);
+  margin: 0 0 70px 0;
 }
 
 .s-especialidades {
-  text-align: center;
+  text-align: left;
   justify-content: center;
   flex-direction: column;
   font-size: 22px;
@@ -389,7 +388,7 @@ button:nth-child(5):hover ~ button {
 .parallax-3 {
   background-image: url(../assets/images/delivery-banner.jpg);
   background-attachment: fixed;
-  background-position: 29%;
+  background-position: 33%;
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
@@ -397,18 +396,18 @@ button:nth-child(5):hover ~ button {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 0 0 70px 0;
   background-blend-mode: soft-light;
   background-color: rgba(84, 81, 82, 0.4);
   object-fit: cover;
   object-position: left;
+  margin: 0 0 70px 0;
 }
 
 /*nosotros*/
 .parallax-4 {
   background-image: url(../assets/images/nosotros-banner.jpg);
   background-attachment: fixed;
-  background-position: center;
+  background-position: 30%;
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
@@ -416,10 +415,10 @@ button:nth-child(5):hover ~ button {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 0 0 70px 0;
   background-blend-mode: soft-light;
   background-color: rgba(87, 81, 83, 0.705);
-  object-fit: scale-down;
+  object-fit: cover;
+  margin: 0;
 }
 
 /* cards carta*/
@@ -458,7 +457,6 @@ button:nth-child(5):hover ~ button {
 
 .card-body-card {
   padding: 10px;
-  text-align: center;
 }
 .card-body-card p {
   padding: 20px;
@@ -515,6 +513,8 @@ button:nth-child(5):hover ~ button {
   text-align: center;
   margin: 30px 0 40px 0;
   font-size: 22px;
+  padding: 5px;
+  text-align: left;
 }
 
 .img-chef {
@@ -567,9 +567,10 @@ button:nth-child(5):hover ~ button {
 }
 
 .text-d {
-  text-align: center;
+  text-align: left;
+  padding: 9px;
   font-size: 22px;
-  margin: 20px;
+  margin: 40px;
 }
 .text-d li {
   text-align: left;
@@ -705,7 +706,7 @@ textarea {
   width: 50%;
   background: #f6f2f3;
   color: black;
-  padding: 17px;
+  padding: 14px;
   transition: all 0.2s;
   border-radius: 30PX;
   transition: transform 0.2s;
@@ -755,6 +756,7 @@ textarea {
 .p-nos {
   font-size: 22px;
   padding: 20px;
+  text-align: left;
 }
 
 .direcion strong {
