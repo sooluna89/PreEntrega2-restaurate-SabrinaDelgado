@@ -446,9 +446,6 @@ button:nth-child(5):hover ~ button {
   justify-content: center;
   cursor: default;
 }
-.cards:hover {
-  transform: translateY(-3%);
-}
 
 .title {
   font-size: 24px;
@@ -856,7 +853,7 @@ textarea {
   }
 }
 /*CARTA*/
-@media (max-width: 900px) {
+@media (max-width: 900px) and (min-width: 320px) {
   .img-chef img {
     width: 100%;
     margin-bottom: 0;
