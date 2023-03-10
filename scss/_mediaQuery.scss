@@ -1,6 +1,6 @@
 /*MEDIA QUERY*/
 /*PORTADA IDEX*/
-@media (max-width:1024px) and (min-width:320px) {
+@media (max-width:700px) and (min-width:320px) {
     .portada {
         display: flex;
         height: auto;
@@ -12,7 +12,7 @@
 
     }
 
-    .contenedor-portada h6 {
+    .contenedor-portada h1 {
         font-size: 43px;
     }
 

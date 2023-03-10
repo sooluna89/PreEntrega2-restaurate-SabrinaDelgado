@@ -111,7 +111,7 @@
 .contenedor-portada h1 {
   height: auto;
   max-width: 100%;
-  font-size: 55px;
+  font-size: 60px;
   margin-top: 30px;
   text-align: center;
   color: #fff;
@@ -832,7 +832,7 @@ textarea {
 
 /*MEDIA QUERY*/
 /*PORTADA IDEX*/
-@media (max-width: 1024px) and (min-width: 320px) {
+@media (max-width: 700px) and (min-width: 320px) {
   .portada {
     display: flex;
     height: auto;
@@ -841,7 +841,7 @@ textarea {
     background-repeat: no-repeat;
     background-position: center;
   }
-  .contenedor-portada h6 {
+  .contenedor-portada h1 {
     font-size: 43px;
   }
   .logo-fondo {
