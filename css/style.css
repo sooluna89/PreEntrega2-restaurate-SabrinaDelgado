@@ -583,7 +583,7 @@ button:nth-child(5):hover ~ button {
 
 .acordeon {
   width: 60%;
-  padding: 40px;
+  padding: 20px;
   margin: auto;
   margin-top: 20px;
   display: flex;
@@ -868,9 +868,10 @@ textarea {
   }
 }
 /*DELIVERY Y SEVICIOS*/
-@media (max-width: 390px) {
+@media (min-width: 320px) and (max-width: 600px) {
   .acordeon {
-    width: 100%;
+    width: 90%;
+    margin: 10px;
   }
 }
 /*RESERVA*/

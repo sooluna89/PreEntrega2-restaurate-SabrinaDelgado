@@ -47,11 +47,11 @@
 }
 
 /*DELIVERY Y SEVICIOS*/
-@media (max-width: 390px) {
+@media (min-width: 320px) and (max-width:600px) {
     .acordeon {
-        width: 100%;
+        width: 90%;
+        margin: 10px;
     }
-
 
 }
 
