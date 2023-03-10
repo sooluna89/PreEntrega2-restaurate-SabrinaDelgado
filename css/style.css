@@ -108,7 +108,7 @@
   align-items: center;
   flex-direction: column;
 }
-.contenedor-portada h6 {
+.contenedor-portada h1 {
   height: auto;
   max-width: 100%;
   font-size: 60px;
@@ -204,7 +204,7 @@
   width: 100%;
 }
 
-.titulo_reseña h1 {
+.titulo_reseña h2 {
   margin: 60px 30px 40px 50px;
   display: flex;
   flex-direction: column;
@@ -215,7 +215,7 @@
   font-weight: bold;
 }
 
-.testimonios_header h1 {
+.testimonios_header strong {
   font-size: 2.9rem;
   font-weight: 500;
   background-color: #9b9494;
@@ -223,7 +223,7 @@
   padding: 10px 20px;
 }
 
-.testimonio_header span {
+.testimonios_header span {
   font-size: 2.2rem;
   color: #252525;
   margin-bottom: 25px;
@@ -524,7 +524,7 @@ button:nth-child(5):hover ~ button {
 
 /*booststrap carrusel*/
 .tituloSlaider {
-  font-size: 40px;
+  font-size: 45px;
 }
 
 .parrafoSlaider {
@@ -671,7 +671,7 @@ summary {
 }
 
 form {
-  width: 70%;
+  width: 50%;
   margin: auto;
   background: rgba(0, 0, 0, 0.4);
   padding: 20px;
@@ -684,14 +684,14 @@ form {
 }
 
 input {
-  width: 100%;
-  margin-bottom: 50px;
+  width: 70%;
+  margin-bottom: 30px;
   padding: 7px;
   font-size: 17px;
 }
 
 textarea {
-  width: 100%;
+  width: 70%;
   margin-bottom: 20px;
   padding: 7px;
   font-size: 17px;
@@ -874,11 +874,17 @@ textarea {
   }
 }
 /*RESERVA*/
-@media (min-width: 370px) and (max-width: 1023px) {
+@media (min-width: 330px) and (max-width: 700px) {
   form {
     width: 100%;
   }
   #boton {
+    width: 100%;
+  }
+  input {
+    width: 100%;
+  }
+  textarea {
     width: 100%;
   }
 }
